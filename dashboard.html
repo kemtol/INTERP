@@ -211,51 +211,21 @@
               </p>
             </a>
           </li>
-          <li class="nav-item nav-item has-treeview">
+          <li class="nav-item">
             <a href="#Project" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
                 Project
               </p>
-              <i class="right fas fa-angle-left"></i>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#project" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>List Project</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#ProjectAdd" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Create Project</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          <li class="nav-item nav-item has-treeview">
+          <li class="nav-item">
             <a href="#rental" class="nav-link">
               <i class="nav-icon fas fa-registered"></i>
               <p>
                 Rental
               </p>
-              <i class="right fas fa-angle-left"></i>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#rental" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>List Rental</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#RentalAdd" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Create Rental</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -267,25 +237,10 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
+                <a href="" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contact</p>
-                  <i class="right fas fa-angle-left"></i>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="contact" class="nav-link active">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>List Customer</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="contactAdd" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add Contact</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
             <ul class="nav nav-treeview">
@@ -293,22 +248,7 @@
                 <a href="./index.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Customer</p>
-                  <i class="right fas fa-angle-left"></i>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>List Customer</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index2.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add Customer</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
             <ul class="nav nav-treeview">
@@ -316,22 +256,7 @@
                 <a href="./index.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Leads</p>
-                  <i class="right fas fa-angle-left"></i>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="leads" class="nav-link active">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>List Leads</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="leadsAdd" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add Leads</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </li>
@@ -1370,7 +1295,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#salesOrder">Sales Order</a></li>
+              <li class="breadcrumb-item"><a href="#salesOrder">List Sales Order</a></li>
               <li class="breadcrumb-item active">Add New</li>
             </ol>
           </div><!-- /.col -->
@@ -1386,9 +1311,9 @@
         <div class="row">
           <div class="col-12">
             <!-- general form elements disabled -->
-            <div class="card card-warning">
+            <div class="card">
               <div class="card-header">
-                <h3 class="card-title">General Elements</h3>
+                <h3 class="card-title">Form Sales Order</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -1397,14 +1322,29 @@
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Text</label>
-                        <input type="text" class="form-control" placeholder="Enter ...">
+                        <label>Order No</label>
+                        <input type="text" class="form-control">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Text Disabled</label>
-                        <input type="text" class="form-control" placeholder="Enter ..." disabled>
+                        <label>Date</label>
+                        <input type="date" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Customer</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Delivery Date</label>
+                        <input type="date" class="form-control">
                       </div>
                     </div>
                   </div>
@@ -1412,14 +1352,18 @@
                     <div class="col-sm-6">
                       <!-- textarea -->
                       <div class="form-group">
-                        <label>Textarea</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                        <label>Order Type</label>
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Textarea Disabled</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
+                        <label>Customers Purchase Order</label>
+                        <input type="text" class="form-control">
                       </div>
                     </div>
                   </div>
