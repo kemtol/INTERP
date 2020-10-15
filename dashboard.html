@@ -195,51 +195,21 @@
             </a>
           </li>
           <li class="nav-header">SALES & MARKETING</li>
-          <li class="nav-item nav-item has-treeview">
+          <li class="nav-item">
             <a href="#salesOrder" class="nav-link">
               <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Sales Order
               </p>
-              <i class="right fas fa-angle-left"></i>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#salesOrder" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>List Sales Order</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#salesOrderAdd" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Create Sales Order</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          <li class="nav-item nav-item has-treeview">
-            <a href="#salesOrder" class="nav-link">
+          <li class="nav-item">
+            <a href="#quotation" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
               <p>
                 Quotaion
               </p>
-              <i class="right fas fa-angle-left"></i>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#quotation" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>List Quotation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#quotationAdd" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Create Quotation</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item nav-item has-treeview">
             <a href="#Project" class="nav-link">
@@ -1315,70 +1285,62 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>Order</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th width="450px">Ship to</th>
+                  <th width="150px">Total</th>
+                  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
-                  </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
+                  <td>#001O1</td>
+                  <td>Jan, 01-2020</td>
+                  <td><button type="button" class="btn btn-block btn-outline-success btn-sm">Processing</button></td>
+                  <td>Jl. Kuningan Barat Raya No.8, RT.1/RW.3, Kuningan Bar., Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12710</td>
+                  <td>Rp. 2000000</td>
+                  <td><a href=""><i class="fas fa-edit"></i></a></td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0
-                  </td>
-                  <td>Win 95+</td>
-                  <td>5</td>
-                  <td>C</td>
+                  <td>#001O2</td>
+                  <td>Jan, 01-2020</td>
+                  <td><button type="button" class="btn btn-block btn-outline-primary btn-sm">Delivered</button></td>
+                  <td>Jl. Kuningan Barat Raya No.8, RT.1/RW.3, Kuningan Bar., Kec. Mampang, Jakarta 12710</td>
+                  <td>Rp. 1000000</td>
+                  <td><a href=""><i class="fas fa-edit"></i></a></td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5
-                  </td>
-                  <td>Win 95+</td>
-                  <td>5.5</td>
-                  <td>A</td>
+                  <td>#001O3</td>
+                  <td>Jan, 01-2020</td>
+                  <td><button type="button" class="btn btn-block btn-outline-danger btn-sm">Pending Payment</button></td>
+                  <td>Jl HR. Rasuna Said Blok X-5 No.13, Setiabudi, RT.7/RW.2, Kota Jakarta Selatan, DKI Jakarta</td>
+                  <td>Rp. 5000000</td>
+                  <td><a href=""><i class="fas fa-edit"></i></a></td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 6
-                  </td>
-                  <td>Win 98+</td>
-                  <td>6</td>
-                  <td>A</td>
+                  <td>#001O1</td>
+                  <td>Jan, 01-2020</td>
+                  <td><button type="button" class="btn btn-block btn-outline-success btn-sm">Processing</button></td>
+                  <td>Jl. Kuningan Barat Raya No.8, RT.1/RW.3, Kuningan Bar., Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12710</td>
+                  <td>Rp. 2000000</td>
+                  <td><a href=""><i class="fas fa-edit"></i></a></td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet Explorer 7</td>
-                  <td>Win XP SP2+</td>
-                  <td>7</td>
-                  <td>A</td>
+                  <td>#001O2</td>
+                  <td>Jan, 01-2020</td>
+                  <td><button type="button" class="btn btn-block btn-outline-primary btn-sm">Delivered</button></td>
+                  <td>Jl. Kuningan Barat Raya No.8, RT.1/RW.3, Kuningan Bar., Kec. Mampang, Jakarta 12710</td>
+                  <td>Rp. 1000000</td>
+                  <td><a href=""><i class="fas fa-edit"></i></a></td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>AOL browser (AOL desktop)</td>
-                  <td>Win XP</td>
-                  <td>6</td>
-                  <td>A</td>
-                </tr>
-                <tr>
-                  <td>Gecko</td>
-                  <td>Firefox 1.0</td>
-                  <td>Win 98+ / OSX.2+</td>
-                  <td>1.7</td>
-                  <td>A</td>
+                  <td>#001O3</td>
+                  <td>Jan, 01-2020</td>
+                  <td><button type="button" class="btn btn-block btn-outline-danger btn-sm">Pending Payment</button></td>
+                  <td>Jl HR. Rasuna Said Blok X-5 No.13, Setiabudi, RT.7/RW.2, Kota Jakarta Selatan, DKI Jakarta</td>
+                  <td>Rp. 5000000</td>
+                  <td><a href=""><i class="fas fa-edit"></i></a></td>
                 </tr>
                 </tfoot>
               </table>
