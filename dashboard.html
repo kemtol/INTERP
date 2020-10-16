@@ -254,7 +254,7 @@
           </li>
           <li class="nav-header">INVENTORY MANAGEMENT</li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#masterItems" class="nav-link">
               <i class="nav-icon fas fa-cube"></i>
               <p>
                 Master Items
@@ -262,7 +262,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#masterItem" class="nav-link">
               <i class="nav-icon fas fa-cubes"></i>
               <p>
                 Parts
@@ -630,13 +630,13 @@
                 <!-- card tools -->
                 <div class="card-tools">
                   <button type="button"
-                          class="btn btn-primary btn-sm daterange"
+                          class="btn btn-primary btn-sx daterange"
                           data-toggle="tooltip"
                           title="Date range">
                     <i class="far fa-calendar-alt"></i>
                   </button>
                   <button type="button"
-                          class="btn btn-primary btn-sm"
+                          class="btn btn-primary btn-sx"
                           data-card-widget="collapse"
                           data-toggle="tooltip"
                           title="Collapse">
@@ -681,10 +681,10 @@
                 </h3>
 
                 <div class="card-tools">
-                  <button type="button" class="btn bg-info btn-sm" data-card-widget="collapse">
+                  <button type="button" class="btn bg-info btn-sx" data-card-widget="collapse">
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button type="button" class="btn bg-info btn-sm" data-card-widget="remove">
+                  <button type="button" class="btn bg-info btn-sx" data-card-widget="remove">
                     <i class="fas fa-times"></i>
                   </button>
                 </div>
@@ -758,11 +758,9 @@
         <div class="row">
           <div class="col-12">
           <div class="card">
-            <div class="card-header">
-              <a href=#quotationAdd><button type="button" class="btn btn-primary btn-sm float-sm-right">New Quotation</button></a>
-            </div>
             <!-- /.card-header -->
             <div class="card-body">
+              <a href=#quotationAdd><button type="button" class="btn btn-primary btn-sx">New Quotation</button></a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -861,7 +859,7 @@
   <div id="quotationAdd" class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">Create Quotation</h1>
@@ -1029,7 +1027,7 @@
           <div class="card">
             <!-- /.card-header -->
             <div class="card-body">
-              <a href=#salesOrderAdd><button type="button" class="btn btn-primary btn-sm">New Sales Order</button></a>
+              <a href=#salesOrderAdd><button type="button" class="btn btn-primary btn-sx">New Sales Order</button></a>
               <table id="example2" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -1110,7 +1108,7 @@
   <div id="salesOrderAdd" class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">Create Sales Order</h1>
@@ -1218,9 +1216,11 @@
                           </tr>
                         </tbody>
                       </table>
+                      <button type="button" class="btn btn-primary btn-sx">Add Row</button>
                     </div>
                   </div>
                   <!-- end of table-->
+                  <hr/></hr>
 
                   <div class="row">
                     <div class="col-sm-6">
@@ -1266,6 +1266,10 @@
                 </form>
               </div>
               <!-- /.card-body -->
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+                <button type="button" class="btn btn-default btn-sx">Cancel</button>
+              </div>
             </div>
             <!-- /.card -->
           </div>
@@ -1276,6 +1280,257 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+
+  <!-- Halaman Master Items -->
+  <div id="masterItems" class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Mater Items</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Master Items</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+        <!-- Main content -->
+      <section class="content">
+        <div class="container">
+          <!-- Small boxes (Stat box) -->
+          <div class="row">
+            <div class="col-12">
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <a href=#masterItemsAdd><button type="button" class="btn btn-primary btn-sx">New Item</button></a>
+                <table id="example3" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Item Type</th>
+                    <th>Status</th>
+                    <th>Publish Date</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>#00201</td>
+                    <td>Baud</td>
+                    <td>Item</td>
+                    <td>Enabled</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#001O1</td>
+                    <td>Paku</td>
+                    <td>Item</td>
+                    <td>Enabled</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#003O1</td>
+                    <td>Cat Kayu</td>
+                    <td>item</td>
+                    <td>Enabled</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#004O1</td>
+                    <td>Besi</td>
+                    <td>Product</td>
+                    <td>Enabled</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#001O1</td>
+                    <td>Kursi Makan</td>
+                    <td>Product</td>
+                    <td>Enabled</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#001O1</td>
+                    <td>Kursi Makan</td>
+                    <td>Product</td>
+                    <td>Enabled</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            </div>
+            <!-- /.card -->
+            
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+    <!-- Halaman Master Item Add -->
+    <div id="masterItemsAdd" class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Create Item</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#salesOrder">Mater Items</a></li>
+                <li class="breadcrumb-item active">Add New</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+  
+      <!-- Main content -->
+      <section class="content">
+        <div class="container">
+          <!-- Small boxes (Stat box) -->
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <!-- general form elements disabled -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">FORM ITEM</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <form role="form">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <!-- text input -->
+                        <div class="form-group">
+                          <label>Item Code</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Item Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <!-- text input -->
+                        <div class="form-group">
+                          <label>Category</label>
+                          <select class="form-control">
+                            <option>Product</option>
+                            <option>Item</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Unit Of Measures</label>
+                          <select class="form-control">
+                            <option>Liter</option>
+                            <option>KG</option>
+                            <option>Meter</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr></hr>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Disabled</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Maintain Stock</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Is Fixed Asset</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                      </div>
+                    </div>   
+
+                    <hr></hr>
+                    <div class="row">
+                      <div col="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="exampleInputFile">
+                              <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                              <span class="input-group-text" id="">Upload</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+                  <button type="button" class="btn btn-default btn-sx">Cancel</button>
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
   
   
   
@@ -1351,6 +1606,16 @@
     });
 
     $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example3').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
