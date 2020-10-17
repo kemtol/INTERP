@@ -262,7 +262,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#masterItem" class="nav-link">
+            <a href="#masterParts" class="nav-link">
               <i class="nav-icon fas fa-cubes"></i>
               <p>
                 Parts
@@ -270,15 +270,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#masterProducts" class="nav-link">
               <i class="nav-icon fas fa-archive"></i>
               <p>
-                Product
+                Products
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#MasterBundlings" class="nav-link">
               <i class="nav-icon fas fa-puzzle-piece"></i>
               <p>
                 Bundling
@@ -1175,6 +1175,7 @@
                       <div class="form-group">
                         <label>Order Type</label>
                         <select class="form-control">
+                          <option>-</option>
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -1228,6 +1229,7 @@
                       <div class="form-group">
                         <label>Delivery Type</label>
                         <select class="form-control">
+                          <option>-</option>
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -1326,24 +1328,24 @@
                   <tr>
                     <td>#00201</td>
                     <td>Baud</td>
-                    <td>Item</td>
-                    <td>Enabled</td>
+                    <td>Part</td>
+                    <td>Active</td>
                     <td>Jan, 01-2020</td>
                     <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
                   </tr>
                   <tr>
                     <td>#001O1</td>
                     <td>Paku</td>
-                    <td>Item</td>
-                    <td>Enabled</td>
+                    <td>Part</td>
+                    <td>Active</td>
                     <td>Jan, 01-2020</td>
                     <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
                   </tr>
                   <tr>
                     <td>#003O1</td>
                     <td>Cat Kayu</td>
-                    <td>item</td>
-                    <td>Enabled</td>
+                    <td>Part</td>
+                    <td>Active</td>
                     <td>Jan, 01-2020</td>
                     <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
                   </tr>
@@ -1351,7 +1353,7 @@
                     <td>#004O1</td>
                     <td>Besi</td>
                     <td>Product</td>
-                    <td>Enabled</td>
+                    <td>Active</td>
                     <td>Jan, 01-2020</td>
                     <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
                   </tr>
@@ -1359,7 +1361,7 @@
                     <td>#001O1</td>
                     <td>Kursi Makan</td>
                     <td>Product</td>
-                    <td>Enabled</td>
+                    <td>Active</td>
                     <td>Jan, 01-2020</td>
                     <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
                   </tr>
@@ -1367,7 +1369,7 @@
                     <td>#001O1</td>
                     <td>Kursi Makan</td>
                     <td>Product</td>
-                    <td>Enabled</td>
+                    <td>Active</td>
                     <td>Jan, 01-2020</td>
                     <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
                   </tr>
@@ -1387,8 +1389,8 @@
   </div>
   <!-- /.content-wrapper -->
 
-    <!-- Halaman Master Item Add -->
-    <div id="masterItemsAdd" class="content-wrapper">
+  <!-- Halaman Master Item Add -->
+  <div id="masterItemsAdd" class="content-wrapper">
       <!-- Content Header (Page header) -->
       <div class="content-header">
         <div class="container">
@@ -1443,8 +1445,9 @@
                         <div class="form-group">
                           <label>Category</label>
                           <select class="form-control">
+                            <option>-</option>
                             <option>Product</option>
-                            <option>Item</option>
+                            <option>Part</option>
                           </select>
                         </div>
                       </div>
@@ -1452,6 +1455,7 @@
                         <div class="form-group">
                           <label>Unit Of Measures</label>
                           <select class="form-control">
+                            <option>-</option>
                             <option>Liter</option>
                             <option>KG</option>
                             <option>Meter</option>
@@ -1466,7 +1470,7 @@
                         <div class="form-group">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox">
-                            <label class="form-check-label">Disabled</label>
+                            <label class="form-check-label">Not Active</label>
                           </div>
                         </div>
                       </div>
@@ -1529,8 +1533,236 @@
         </div><!-- /.container-fluid -->
       </section>
       <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+ <!-- Halaman Master Parts -->
+  <div id="masterParts" class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Mater Parts</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Master Parts</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+        <!-- Main content -->
+      <section class="content">
+        <div class="container">
+          <!-- Small boxes (Stat box) -->
+          <div class="row">
+            <div class="col-12">
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <a href=#masterItemsAdd><button type="button" class="btn btn-primary btn-sx">New Part</button></a>
+                <table id="example4" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Item Type</th>
+                    <th>Status</th>
+                    <th>Publish Date</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>#00201</td>
+                    <td>Baud</td>
+                    <td>Part</td>
+                    <td>Active</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#001O1</td>
+                    <td>Triplek</td>
+                    <td>Part</td>
+                    <td>Active</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#003O1</td>
+                    <td>Cat Kayu</td>
+                    <td>Part</td>
+                    <td>Active</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#004O1</td>
+                    <td>Besi</td>
+                    <td>Part</td>
+                    <td>Active</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#005O1</td>
+                    <td>Paku</td>
+                    <td>Part</td>
+                    <td>Active</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#006O1</td>
+                    <td>Lem Kayu</td>
+                    <td>Part</td>
+                    <td>Active</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>#007O1</td>
+                    <td>Kabel</td>
+                    <td>Part</td>
+                    <td>Active</td>
+                    <td>Jan, 01-2020</td>
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            </div>
+            <!-- /.card -->
+            
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+ <!-- Halaman Master Products -->
+  <div id="masterProducts" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Mater Products</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Master Products</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#masterItemsAdd><button type="button" class="btn btn-primary btn-sx">New Product</button></a>
+            <table id="example5" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Item Type</th>
+                <th>Status</th>
+                <th>Publish Date</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>#00201</td>
+                <td>Kursi</td>
+                <td>Part</td>
+                <td>Product</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#001O1</td>
+                <td>Meja Makan</td>
+                <td>Product</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#003O1</td>
+                <td>Sofa</td>
+                <td>Product</td>
+                <td>Product</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#004O1</td>
+                <td>Kasur</td>
+                <td>Part</td>
+                <td>Product</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#005O1</td>
+                <td>Lemari</td>
+                <td>Product</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#006O1</td>
+                <td>Meja Bulat</td>
+                <td>Product</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#007O1</td>
+                <td>Kursi Makan</td>
+                <td>Product</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
   
   
   
@@ -1616,6 +1848,26 @@
     });
 
     $('#example3').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example4').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example5').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
