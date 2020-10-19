@@ -278,7 +278,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#MasterBundlings" class="nav-link">
+            <a href="#masterBundling" class="nav-link">
               <i class="nav-icon fas fa-puzzle-piece"></i>
               <p>
                 Bundling
@@ -985,6 +985,10 @@
                 </form>
               </div>
               <!-- /.card-body -->
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+                <button type="button" class="btn btn-default btn-sx">Cancel</button>
+              </div>
             </div>
             <!-- /.card -->
           </div>
@@ -1679,7 +1683,7 @@
         <div class="card">
           <!-- /.card-header -->
           <div class="card-body">
-            <a href=#masterItemsAdd><button type="button" class="btn btn-primary btn-sx">New Product</button></a>
+            <a href=#masterProductsAdd><button type="button" class="btn btn-primary btn-sx">New Product</button></a>
             <table id="example5" class="table table-bordered table-striped">
               <thead>
               <tr>
@@ -1695,8 +1699,8 @@
               <tr>
                 <td>#00201</td>
                 <td>Kursi</td>
-                <td>Part</td>
                 <td>Product</td>
+                <td>Active</td>
                 <td>Jan, 01-2020</td>
                 <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
@@ -1712,15 +1716,15 @@
                 <td>#003O1</td>
                 <td>Sofa</td>
                 <td>Product</td>
-                <td>Product</td>
+                <td>Active</td>
                 <td>Jan, 01-2020</td>
                 <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
                 <td>#004O1</td>
                 <td>Kasur</td>
-                <td>Part</td>
                 <td>Product</td>
+                <td>Active</td>
                 <td>Jan, 01-2020</td>
                 <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
@@ -1763,9 +1767,437 @@
   <!-- /.content -->
   </div>
 <!-- /.content-wrapper -->
+
+<!-- Halaman Master Product Add -->
+  <div id="masterProductsAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Create Product</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#masterProducts">Mater Products</a></li>
+            <li class="breadcrumb-item active">Add New</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM PRODUCT</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Item Code</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Item Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Category</label>
+                      <input type="text" class="form-control" value="Product">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+
+                <!--form table-->
+                <hr/></hr>
+                <h6>PARTS</h6>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">#</th>
+                          <th>Item Code</th>
+                          <th>Name</th>
+                          <th>Quantity</th>
+                          <th>UOM</th>
+                          <th style="width: 40px"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.</td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><select class="form-control">
+                            <option>-</option>
+                            <option>Liter</option>
+                            <option>KG</option>
+                            <option>Meter</option>
+                          </select></td>
+                          <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></href></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary btn-sx">Add Row</button>
+                  </div>
+                </div>
+                <!-- end of table-->
+
+                <hr></hr>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Not Active</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Maintain Stock</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Is Fixed Asset</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>   
+
+                <hr></hr>
+                <div class="row">
+                  <div col="col-sm-6">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="">Upload</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+            <hr></hr>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
   
   
-  
+ <!-- Halaman Master Bundling -->
+  <div id="masterBundling" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Mater Bundling</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Master Bundling</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#masterBundlingAdd><button type="button" class="btn btn-primary btn-sx">New Bundling</button></a>
+            <table id="example6" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Bundling Code</th>
+                <th>Bundling Name</th>
+                <th>Status</th>
+                <th>Publish Date</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>#00201</td>
+                <td>Paket Meja & Kursi Makan</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#001O1</td>
+                <td>Paket Sofa Ruang Tamu</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#003O1</td>
+                <td>Paket Kasur Anak</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#004O1</td>
+                <td>Pake Meja Belajar Anak</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#005O1</td>
+                <td>Paket Meja Kursi Ruang Tamu</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#006O1</td>
+                <td>Meja Meja Belajar</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#007O1</td>
+                <td>Paket Kursi Kantor</td>
+                <td>Active</td>
+                <td>Jan, 01-2020</td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->  
+
+<!-- Halaman Master Bundling Add -->
+<div id="masterBundlingAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Create Bundling</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#masterBundling">Mater Bundling</a></li>
+            <li class="breadcrumb-item active">Add New</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM BUNDLING</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Bundling Code</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Bundling Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+                <!--form table-->
+                <hr/></hr>
+                <h6>Product</h6>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">#</th>
+                          <th>Product Code</th>
+                          <th>Name</th>
+                          <th>Quantity</th>
+                          <th style="width: 40px"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.</td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></href></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary btn-sx">Add Row</button>
+                  </div>
+                </div>
+                <!-- end of table-->
+
+                <hr></hr>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Not Active</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Maintain Stock</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Is Fixed Asset</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>   
+
+                <hr></hr>
+                <div class="row">
+                  <div col="col-sm-6">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="">Upload</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+            <hr></hr>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -1868,6 +2300,16 @@
     });
 
     $('#example5').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example6').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
