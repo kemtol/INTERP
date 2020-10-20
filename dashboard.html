@@ -255,7 +255,7 @@
           <li class="nav-header">INVENTORY MANAGEMENT</li>
           <li class="nav-item">
             <a href="#masterItems" class="nav-link">
-              <i class="nav-icon fas fa-cube"></i>
+              <i class="nav-icon fas fa-cubes"></i>
               <p>
                 Master Items
               </p>
@@ -263,7 +263,7 @@
           </li>
           <li class="nav-item">
             <a href="#masterParts" class="nav-link">
-              <i class="nav-icon fas fa-cubes"></i>
+              <i class="nav-icon fas fa-cube"></i>
               <p>
                 Parts
               </p>
@@ -287,18 +287,10 @@
           </li>
           <li class="nav-header">LOGISTIC MANAGEMENT</li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#deliveryOrder" class="nav-link">
               <i class="nav-icon fas fa-truck"></i>
               <p>
                 Delivery Order
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
-              <i class="nav-icon fas fa-truck"></i>
-              <p>
-                Proof of Delivery
               </p>
             </a>
           </li>
@@ -1295,12 +1287,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Mater Items</h1>
+              <h1 class="m-0 text-dark">Items</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Master Items</li>
+                <li class="breadcrumb-item active">Items</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -1405,7 +1397,7 @@
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#salesOrder">Mater Items</a></li>
+                <li class="breadcrumb-item"><a href="#salesOrder">Items</a></li>
                 <li class="breadcrumb-item active">Add New</li>
               </ol>
             </div><!-- /.col -->
@@ -1548,12 +1540,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Mater Parts</h1>
+              <h1 class="m-0 text-dark">Parts</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Master Parts</li>
+                <li class="breadcrumb-item active">Parts</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -1662,12 +1654,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Mater Products</h1>
+          <h1 class="m-0 text-dark">Products</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Master Products</li>
+            <li class="breadcrumb-item active">Products</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -1780,7 +1772,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#masterProducts">Mater Products</a></li>
+            <li class="breadcrumb-item"><a href="#masterProducts">Products</a></li>
             <li class="breadcrumb-item active">Add New</li>
           </ol>
         </div><!-- /.col -->
@@ -1940,7 +1932,7 @@
 <!-- /.content-wrapper -->
   
   
- <!-- Halaman Master Bundling -->
+<!-- Halaman Master Bundling -->
   <div id="masterBundling" class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
@@ -2046,7 +2038,7 @@
 <!-- /.content-wrapper -->  
 
 <!-- Halaman Master Bundling Add -->
-<div id="masterBundlingAdd" class="content-wrapper">
+  <div id="masterBundlingAdd" class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
     <div class="container">
@@ -2198,6 +2190,319 @@
   <!-- /.content -->
   </div>
 <!-- /.content-wrapper -->
+
+
+<!-- Halaman Delivery Order List -->
+  <div id="deliveryOrder" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Delivery Order</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Delivery Order</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <!-- <a href=#masterBundlingAdd><button type="button" class="btn btn-primary btn-sx">New Bundling</button></a> -->
+            <table id="example7" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Delivery Order Id</th>
+                <th>Sales Order</th>
+                <th>Date Created</th>
+                <th>Delivery Date</th>
+                <th>Customer</th>
+                <th>Source Warehouse</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><a href="#deliveryOlderView">DO-12345</a></td>
+                <td><a href="">#000123</a></td>
+                <td>Jan, 17-2020</td>
+                <td>Jan, 25-2020</td>
+                <td>Rambo</td>
+                <td>Gudang Jakarta</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#deliveryOlderView" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td><a href="#deliveryOlderView">DO-12366</a></td>
+                <td><a href="">#000144</a></td>
+                <td>Jan, 17-2020</td>
+                <td>Jan, 25-2020</td>
+                <td>Vandame</td>
+                <td>Gudang Jakarta</td>
+                <td><span class="badge bg-primary">Processing</span></td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#deliveryOlderView" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td><a href="#deliveryOlderView">DO-12345</a></td>
+                <td><a href="">#000553</a></td>
+                <td>Jan, 17-2020</td>
+                <td>Jan, 25-2020</td>
+                <td>Anya Geraldine</td>
+                <td>Gudang Jakarta</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#deliveryOlderView" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td><a href="#deliveryOlderView">DO-12345</a></td>
+                <td><a href="">#000983</a></td>
+                <td>Jan, 17-2020</td>
+                <td>Jan, 25-2020</td>
+                <td>Ucup</td>
+                <td>Gudang Jakarta</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#deliveryOlderView" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td><a href="#deliveryOlderView">DO-12345</a></td>
+                <td><a href="">#000993</a></td>
+                <td>Jan, 17-2020</td>
+                <td>Jan, 25-2020</td>
+                <td>Jojon</td>
+                <td>Gudang Jakarta</td>
+                <td><span class="badge bg-primary">Processing</span></td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#deliveryOlderView" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td><a href="#deliveryOlderView">DO-12345</a></td>
+                <td><a href="">#000323</a></td>
+                <td>Jan, 17-2020</td>
+                <td>Jan, 25-2020</td>
+                <td>Anjay</td>
+                <td>Gudang Jakarta</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#deliveryOlderView" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td><a href="#deliveryOlderView">DO-12345</a></td>
+                <td><a href="">#000100</a></td>
+                <td>Jan, 17-2020</td>
+                <td>Jan, 25-2020</td>
+                <td>Oksip</td>
+                <td>Gudang Jakarta</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#deliveryOlderView" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->  
+
+<!-- Halaman Master Bundling Add -->
+<div id="deliveryOlderView" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Delivery Order</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#deliveryOrder">Delivery Older</a></li>
+            <li class="breadcrumb-item active">View Detail</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+          <div class="row">
+            
+              <div class="col-12 col-sm-3">
+                  <div class="info-box mb-3 bg-success">
+                    <span class="info-box-icon"><i class="fas fa-tag"></i></span>
+                    <div class="info-box-content">
+                      <span class="info-box-text">Status</span>
+                      <span class="info-box-number" style="text-transform: capitalize;">Completed</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">SALES ORDER ID</h3>
+                      </div>
+                      <div class="card-body">
+                          <h4><strong>1231231241</strong></h4>
+                          <p class="mb-0">2020-10-15 00:00:00</p>
+                      </div>
+                  </div>
+                  <div class="card d-md-none">
+                      <div class="card-header">
+                        <h3 class="card-title">CUSTOMER</h3>
+                      </div>
+                      <div class="card-body">
+                          <h4><strong>kurniawan</strong></h4>
+                          <p class="mb-0">12412asaf12</p>
+                      </div>
+                  </div>
+                  <div class="card d-md-none">
+                      <div class="card-header">
+                        <h3 class="card-title">CUSTOMER DETAIL</h3>
+                      </div>
+                      <div class="card-body">
+                          <strong><i class="fas fa-map-marker-alt mr-1"></i> Address</strong>
+                          <p class="text-muted">
+                              kaksadkjkj, MALINAU, 12234
+                          </p>
+                          <strong><i class="fas fa-phone mr-1"></i> Phone</strong>
+                          <p class="text-muted">12938129380</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-12 col-sm-9 col-md-6">
+                  <div class="card">
+                      <div class="card-header">
+                          <h3 class="card-title">DELIVERY #000123</h3>
+                      </div>
+                      <div class="card-body">
+                          <dl class="row">
+                            <dt class="col-sm-4">AWB:</dt>
+                            <dd class="col-sm-8">123123</dd>
+                            <dt class="col-sm-4">Courier:</dt>
+                            <dd class="col-sm-8">MrSpeedy</dd>
+                            <dt class="col-sm-4">Warehouse:</dt>
+                            <dd class="col-sm-8">Jakarta</dd>
+                            <dt class="col-sm-4">Gross Weight (kg):</dt>
+                            <dd class="col-sm-8">123</dd>
+                            <dt class="col-sm-4">Nett Weight (kg)</dt>
+                            <dd class="col-sm-8">123</dd>
+                            <dt class="col-sm-4">Volume:</dt>
+                            <dd class="col-sm-8">42</dd>
+                            <dt class="col-sm-4">Created By:</dt>
+                            <dd class="col-sm-8">Admin</dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <!-- /card -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h3 class="card-title">DELIVERY LOG</h3>
+                          <span class="float-right">
+                              <a href="#" class="btn btn-xs btn-success" data-toggle="modal" data-target="#liveTracking"><i data-toggle="tooltip" title="" data-original-title="Live Tracking" class="fas fa-map-pin"></i>
+                              </a>
+                          </span>
+                      </div>
+                      <div class=" card-body" id="timeline">
+                          <!-- The timeline -->
+                          <div class="timeline timeline-inverse">
+
+                              
+                          <!-- tracking logs from db by diwa -->
+                                                              <!-- timeline item -->
+                              <div>
+                                  <i class="fa fa-comments bg-yellow"></i>
+
+                                  <div class="timeline-item">
+                                      <span class="time"><i class="fa fa-clock-o"></i> 2020-10-15 01:11:56</span>
+                                      <h3 class="timeline-header no-border"><a href="#">Changed By : </a><label style="color: blue"> Admin </label></h3>
+                                      <h3 class="timeline-header no-border"><a href="#">Description</a> Handover to Courier</h3>
+                                      <h3 class="timeline-header no-border"><a href="#">Status</a> onprocess</h3>
+                                  </div>
+                              </div>
+                              <!-- END timeline item -->
+                              
+
+
+                  
+                              <!-- END timeline item -->
+                              <div>
+                                  <i class="fa fa-clock-o bg-gray"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- /card -->
+              </div>
+              
+              <div class="col-12 col-md-3 d-none d-md-block">
+                  <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">CUSTOMER NAME</h3>
+                      </div>
+                      <div class="card-body">
+                          <h4><strong>kurniawan</strong></h4>
+                          <p class="mb-0">12412asaf12</p>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">CUSTOMER DETAIL</h3>
+                      </div>
+                      <div class="card-body">
+                          <strong><i class="fas fa-map-marker-alt mr-1"></i> Address</strong>
+                          <p class="text-muted">
+                              kaksadkjkj, MALINAU, 12234
+                          </p>
+                          <strong><i class="fas fa-phone mr-1"></i> Phone</strong>
+                          <p class="text-muted">12938129380</p>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">PROOF OF DELIVERY</h3>
+                    </div>
+                    <div class="card-body text-center">
+                      <img src="dist/img/proof.jpg" class="img-size-250">
+                        <h7>Jan, 20-2020</h7>
+                    </div>
+                </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+  <!-- /.content -->
+
+  </div>
+<!-- /.content-wrapper -->
+
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -2310,6 +2615,16 @@
     });
 
     $('#example6').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example7').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
