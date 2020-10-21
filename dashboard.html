@@ -305,7 +305,7 @@
           </li>
           <li class="nav-header">WAREHOUSE MANAGEMENT</li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#warehouse" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
                 Warehouse
@@ -2329,7 +2329,7 @@
 <!-- /.content-wrapper -->
 
 <!-- Halaman Master Bundling Add -->
-<div id="deliveryOlderView" class="content-wrapper">
+  <div id="deliveryOlderView" class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
     <div class="container">
@@ -2503,6 +2503,252 @@
   </div>
 <!-- /.content-wrapper -->
 
+<!-- Halaman Warehouse -->
+  <div id="warehouse" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Warehouse</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Warehouse</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <select class="form-control" style="width:auto;">
+                  <option>Warehouse Jakarta</option>
+                  <option>Warehouse Bandung</option>
+                  <option>Warehouse Surabaya</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <a href=#mutasi><button id="btnMutasi" type="button" class="btn btn-primary btn-sx float-right" style="display:none;">Mutasi</button></a>
+              </div>
+            </div>
+            
+            <table id="example8" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th style="width:20px"></th>
+                <th>Item ID</th>
+                <th>Item Name</th>
+                <th>Category</th>
+                <th>Stok</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <input class="wchk" type="checkbox">
+                </td>
+                <td>#000123</td>
+                <td>Lemari</td>
+                <td>Product</td>
+                <td>200</td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="wchk" type="checkbox">
+                </td>
+                <td>#000123</td>
+                <td>Sofa</td>
+                <td>Product</td>
+                <td>400</td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="wchk" type="checkbox">
+                </td>
+                <td>#000123</td>
+                <td>Paku</td>
+                <td>item</td>
+                <td>2000</td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="wchk" type="checkbox">
+                </td>
+                <td>#000123</td>
+                <td>Meja</td>
+                <td>Product</td>
+                <td>20</td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="wchk" type="checkbox">
+                </td>
+                <td>#000123</td>
+                <td>Cat Kayu</td>
+                <td>Product</td>
+                <td>600</td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="wchk" type="checkbox">
+                </td>
+                <td>#000123</td>
+                <td>Koas</td>
+                <td>Item</td>
+                <td>1200</td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Mutasi Add -->
+  <div id="mutasi" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Mutasi</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#masterProducts">Mutasi</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM MUTASI</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Mutasi Code</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Mutasi Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Warehouse Destination</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Warehouse Jakarta</option>
+                        <option>Warehouse Bandung</option>
+                        <option>Warehouse Surabaya</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+
+                <!--form table-->
+                <hr/>
+                <h6>ITEMS</h6>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">#</th>
+                          <th>Item Code</th>
+                          <th>Name</th>
+                          <th>Stok Asal </th>
+                          <th>Jumlah Mutasi</th>
+                          <th>Stok Tujuan</th>
+                          <th style="width: 40px"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.</td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- end of table-->
+              </form>
+            </div>
+            <!-- /.card-body -->
+            <hr />
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
+
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -2564,6 +2810,12 @@
 <!-- page script -->
 <script>
   $(function () {
+    $(".wchk").change(function() {
+        if(this.checked) {
+          $('#btnMutasi').show();
+        }
+    });
+
     $("#example1").DataTable({
       "paging": true,
       "lengthChange": false,
@@ -2625,6 +2877,16 @@
     });
 
     $('#example7').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example8').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
