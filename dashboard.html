@@ -757,7 +757,8 @@
                 <thead>
                 <tr>
                   <th>Quotation Number</th>
-                  <th>Quotation Date</th>
+                  <th>Star Date</th>
+                  <th>End Date</th>
                   <th>Customer</th>
                   <th>Sales Person</th>
                   <th>Total</th>
@@ -769,6 +770,7 @@
                 <tr>
                   <td>#001O1</td>
                   <td>Jan, 01-2020</td>
+                  <td>Jan, 10-2020</td>
                   <td>PT. AABBCC</td>
                   <td>Mrs. XYZXZ</td>
                   <td>Rp. 1000000</td>
@@ -778,6 +780,7 @@
                 <tr>
                   <td>#001O2</td>
                   <td>Jan, 25-2020</td>
+                  <td>Jan, 10-2020</td>
                   <td>PT. DDDFFF</td>
                   <td>Mrs. yyy</td>
                   <td>Rp. 3000000</td>
@@ -787,6 +790,7 @@
                 <tr>
                   <td>#001O6</td>
                   <td>Jan, 20-2020</td>
+                  <td>Jan, 10-2020</td>
                   <td>PT. GGGRRRR</td>
                   <td>Mrs. EFFFF</td>
                   <td>Rp. 5000000</td>
@@ -796,6 +800,7 @@
                 <tr>
                   <td>#001O3</td>
                   <td>Jan, 04-2020</td>
+                  <td>Jan, 10-2020</td>
                   <td>PT. HIJKL</td>
                   <td>Mrs. AIEO</td>
                   <td>Rp. 5000000</td>
@@ -805,6 +810,7 @@
                 <tr>
                   <td>#00132</td>
                   <td>Jan, 01-2020</td>
+                  <td>Jan, 10-2020</td>
                   <td>PT. AABBCC</td>
                   <td>Mrs. XYZXZ</td>
                   <td>Rp. 1000000</td>
@@ -814,6 +820,7 @@
                 <tr>
                   <td>#00112</td>
                   <td>Jan, 25-2020</td>
+                  <td>Jan, 10-2020</td>
                   <td>PT. DDDFFF</td>
                   <td>Mrs. yyy</td>
                   <td>Rp. 3000000</td>
@@ -823,6 +830,7 @@
                 <tr>
                   <td>#00112</td>
                   <td>Jan, 25-2020</td>
+                  <td>Jan, 10-2020</td>
                   <td>PT. DDDFFF</td>
                   <td>Mrs. yyy</td>
                   <td>Rp. 3000000</td>
@@ -892,8 +900,8 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Date</label>
-                        <input type="date" class="form-control">
+                        <label>Customer</label>
+                        <input type="text" class="form-control">
                       </div>
                     </div>
                   </div>
@@ -901,24 +909,18 @@
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Delivered To</label>
-                        <input type="text" class="form-control">
+                        <label>star Date</label>
+                        <input type="date" class="form-control">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Valid</label>
+                        <label>End Date</label>
                         <input type="date" class="form-control">
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label>Cutomer</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Order Type</label>
@@ -928,6 +930,8 @@
                           <option>3</option>
                         </select>
                       </div>
+                    </div>
+                    <div class="col-sm-6">
                     </div>
                   </div>
 
@@ -958,6 +962,40 @@
                           </tr>
                         </tbody>
                       </table>
+                      <button type="button" class="btn btn-primary btn-sx">Add Item</button>
+                    </div>
+                  </div>
+                  <!-- end of table-->
+
+
+                  <!--form table Payment-->
+                  <hr />
+                  <h6 class="mb-3">Payments Terms</h6>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Payment Term</th>
+                            <th>Due Date</th>
+                            <th>Invoice Portion</th>
+                            <th>Payment Amount</th>
+                            <th style="width: 40px"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1.</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="date" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="button" class="btn btn-primary btn-sx">Add Payment</button>
                     </div>
                   </div>
                   <!-- end of table-->
