@@ -314,7 +314,7 @@
           </li>
           <li class="nav-header">CONTENT MANAGEMENT</li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#post" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Post
@@ -322,7 +322,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#media" class="nav-link">
               <i class="nav-icon fas fa-image"></i>
               <p>
                 Media
@@ -2529,6 +2529,11 @@
       <div class="row">
         <div class="col-12">
         <div class="card">
+          <div class="card-body" style="width: 200px;">
+              <a href="#mutasi"><button type="button" class="btn btn-block btn-secondary">New Mutasi</button></a>
+          </div>
+        </div>  
+        <div class="card">
           <!-- /.card-header -->
           <div class="card-body">
             <div class="row">
@@ -2644,7 +2649,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#masterProducts">Mutasi</a></li>
+            <li class="breadcrumb-item"><a href="#warehouse">Mutasi</a></li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -2683,7 +2688,17 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
-                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Warehouse Source</label>
+                      <select class="form-control" style="width:auto;">
+                        <option></option>
+                        <option>Warehouse Jakarta</option>
+                        <option>Warehouse Bandung</option>
+                        <option>Warehouse Surabaya</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
                     <div class="form-group">
                       <label>Warehouse Destination</label>
                       <select class="form-control" style="width:auto;">
@@ -2693,8 +2708,6 @@
                         <option>Warehouse Surabaya</option>
                       </select>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
                   </div>
                 </div>
 
@@ -2749,6 +2762,218 @@
   </div>
 <!-- /.content-wrapper -->
 
+
+<!-- Halaman Post -->
+<div id="post" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Post</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Post</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">  
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#postAdd><button id="btnMutasi" type="button" class="btn btn-primary btn-sx">Create Post</button></a>
+            <table id="example9" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Post ID</th>
+                <th>Post Name</th>
+                <th>Post Type</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>#p001</td>
+                <td>Info Kegiatan</td>
+                <td>Page</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>#p002</td>
+                <td>Berita Kepegawaian</td>
+                <td>Page</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>#p003</td>
+                <td>Info Cuti</td>
+                <td>Post</td>
+                <td><span class="badge bg-danger">Not Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>#p004</td>
+                <td>Pengumuman</td>
+                <td>Page</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>#p005</td>
+                <td>Info Kegiatan</td>
+                <td>Page</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>#p006</td>
+                <td>Berita Kepegawaian</td>
+                <td>Page</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              <tr>
+                <td>#p007</td>
+                <td>Info Kegiatan</td>
+                <td>Page</td>
+                <td><span class="badge bg-danger">Not Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Post Add -->
+  <div id="postAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Create Post</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#post">Post</a></li>
+            <li class="breadcrumb-item"><a href="#">Add New</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM POST</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Post Id</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Post Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Post Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Post Type</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Page</option>
+                        <option>Post</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Status Post</label>
+                      <select class="form-control" style="width:auto;">
+                        <option></option>
+                        <option>Active</option>
+                        <option>Not Active</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <textarea class="textedit" placeholder="Place some text here"
+                            style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                </div>
+
+              </form>
+            </div>
+            <!-- /.card-body -->
+            <hr />
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -2807,6 +3032,14 @@
 <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
+<!-- Text Editor -->
+<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+<script>
+  $(function () {
+    // Summernote
+    $('.textedit').summernote()
+  })
+</script>
 <!-- page script -->
 <script>
   $(function () {
@@ -2887,6 +3120,16 @@
     });
 
     $('#example8').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example9').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
