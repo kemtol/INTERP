@@ -354,7 +354,7 @@
           </li>
           <li class="nav-header">CUSTOMER SUPPORT</li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#customerService" class="nav-link">
               <i class="nav-icon fas fa-headphones"></i>
               <p>
                 Customer Service
@@ -362,66 +362,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#repairMaintenance" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
                 Repair & Maintenance
               </p>
             </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Stock Inventory
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-header">SETTING</li>
           <li class="nav-item has-treeview">
@@ -2400,7 +2346,7 @@
   </div>
 <!-- /.content-wrapper -->
 
-<!-- Halaman Master Bundling Add -->
+<!-- Halaman Delivery Order View -->
   <div id="deliveryOlderView" class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
@@ -3251,6 +3197,455 @@
   <!-- /.content -->
   </div>
 <!-- /.content-wrapper -->
+
+
+<!-- Halaman Customer Service -->
+<div id="customerService" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Customer Service</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Customer Service</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">  
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#customerServiceAdd><button type="button" class="btn btn-primary btn-sx">Create Ticket</button></a>
+            <table id="example10" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Due Date</th>
+                <th>Action</th>
+                <th>Status</th>
+                <th>Ticket Id</th>
+                <th>Customer Id</th>
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Compliner Name</th>
+                <th>Compliner Email</th>
+                <th>Compliner Contact</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Jan, 10 2020</td>
+                <td>
+                  <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
+                </td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td>#2020001</td>
+                <td>1234567</td>
+                <td>Jan, 01 2020</td>
+                <td>General</td>
+                <td>Rambo</td>
+                <td>rambo@dot.com</td>
+                <td>0812362837</td>
+              </tr>
+              <tr>
+                <td>Jan, 10 2020</td>
+                <td>
+                  <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
+                </td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td>#2020001</td>
+                <td>1234567</td>
+                <td>Jan, 01 2020</td>
+                <td>General</td>
+                <td>Rambo</td>
+                <td>rambo@dot.com</td>
+                <td>0812362837</td>
+              </tr>
+              <tr>
+                <td>Jan, 10 2020</td>
+                <td>
+                  <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
+                </td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td>#2020001</td>
+                <td>1234567</td>
+                <td>Jan, 01 2020</td>
+                <td>General</td>
+                <td>Rambo</td>
+                <td>rambo@dot.com</td>
+                <td>0812362837</td>
+              </tr>
+              <tr>
+                <td>Jan, 10 2020</td>
+                <td>
+                  <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
+                </td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td>#2020001</td>
+                <td>1234567</td>
+                <td>Jan, 01 2020</td>
+                <td>General</td>
+                <td>Rambo</td>
+                <td>rambo@dot.com</td>
+                <td>0812362837</td>
+              </tr>
+              <tr>
+                <td>Jan, 10 2020</td>
+                <td>
+                  <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
+                </td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td>#2020001</td>
+                <td>1234567</td>
+                <td>Jan, 01 2020</td>
+                <td>General</td>
+                <td>Rambo</td>
+                <td>rambo@dot.com</td>
+                <td>0812362837</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Customer Service Add -->
+<div id="customerServiceAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Create Ticket</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#customerService">Customer Service</a></li>
+            <li class="breadcrumb-item"><a href="#">Add New</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM Ticket</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Complaint Type</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Non-Delivery</option>
+                        <option>Delivery</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>So Number</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Complainer Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>AWB</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Complainer Email</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Customer Id</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Complainer Phone</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Customer Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              
+                <hr/>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Topic</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>General</option>
+                        <option>Transaction</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputFile">Attachment</label>
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="">Upload</span>
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="">Upload</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="form-control" row="3" style="width: 100%; height: 200px;"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+            <hr />
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Ticket View -->
+<div id="ticketView" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Ticket Detail</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#customerService">Customer Service</a></li>
+            <li class="breadcrumb-item active">Ticket Detail</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container">
+        <div class="row justify-content-center">
+              <div class="col-12 col-sm-4">
+                  <div class="info-box mb-3 bg-success">
+                    <span class="info-box-icon"><i class="fas fa-tag"></i></span>
+                    <div class="info-box-content">
+                      <span class="info-box-text">Status</span>
+                      <span class="info-box-number" style="text-transform: capitalize;">Open</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                    <button type="submit" class="btn btn-primary btn-sx">Change Due Date</button>
+                  </div>
+                  <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">Ticket ID <strong>#2020001</strong></h3>
+                      </div>
+                      <div class="card-body">
+                        <dl class="row">
+                          <dt class="col-sm-6">Created Date:</dt>
+                          <dd class="col-sm-6">Jan, 01 2020</dd>
+                          <dt class="col-sm-6">Due Date:</dt>
+                          <dd class="col-sm-6">Jan, 20 2020</dd>
+                        </dl>  
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <dl class="row">
+                        <dt class="col-sm-6">Topic</dt>
+                        <dd class="col-sm-6">General</dd>
+                        <dt class="col-sm-6">So Number</dt>
+                        <dd class="col-sm-6">#SO00011</dd>
+                        <dt class="col-sm-6">Customer Id</dt>
+                        <dd class="col-sm-6">#CS00010</dd>
+                        <dt class="col-sm-6">Customer Name</dt>
+                        <dd class="col-sm-6">PT. Jaya</dd>
+                      </dl>  
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">Complainer</h3>
+                    </div>
+                    <div class="card-body">
+                      <dl class="row">
+                        <dt class="col-sm-6">Complainer Name</dt>
+                        <dd class="col-sm-6">Rambo</dd>
+                        <dt class="col-sm-6">Complainer Email</dt>
+                        <dd class="col-sm-6">rambo@dot.com</dd>
+                        <dt class="col-sm-6">Complainer Phone</dt>
+                        <dd class="col-sm-6">08213128479</dd>
+                      </dl>  
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="col-12 col-sm-8 col-md-6">
+                  <div class="card">
+                      <div class="card-body">
+                        <div class="form-group">
+                          <input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-on-text="Solved" data-off-text="Not Solved">
+                        </div>
+                        <hr/>
+                        <div class="form-group">
+                          <label>Information</label>
+                          <textarea class="form-control" row="3" style="width: 100%; height: 200px;"></textarea>
+                        </div>
+                        <div class="input-group">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                          </div>
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="">Attachment</span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+                        <button type="button" class="btn btn-default btn-sx">Cancel</button>
+                      </div>
+                  </div>
+                  <!-- /card -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h3 class="card-title">Ticket Log</h3>
+                          <span class="float-right">
+                              <a href="#" class="btn btn-xs btn-success" data-toggle="modal" data-target="#liveTracking"><i data-toggle="tooltip" title="" data-original-title="Live Tracking" class="fas fa-map-pin"></i>
+                              </a>
+                          </span>
+                      </div>
+                      <div class=" card-body" id="timeline">
+                          <!-- The timeline -->
+                          <div class="timeline timeline-inverse">
+                          <!-- timeline item -->
+                            <div>
+                                <i class="fa fa-comments bg-yellow"></i>
+
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 2020-10-15 01:11:56</span>
+                                    <h3 class="timeline-header no-border"><a href="#">Changed By : </a><label style="color: blue"> Admin </label></h3>
+                                    <h3 class="timeline-header no-border"><a href="#">Description</a> Open Issue</h3>
+                                    <h3 class="timeline-header no-border"><a href="#">Status</a> Open</h3>
+                                </div>
+                            </div>
+                            <div>
+                              <i class="fa fa-comments bg-yellow"></i>
+
+                              <div class="timeline-item">
+                                  <span class="time"><i class="fa fa-clock-o"></i> 2020-10-15 01:11:56</span>
+                                  <h3 class="timeline-header no-border"><a href="#">Changed By : </a><label style="color: blue"> Admin </label></h3>
+                                  <h3 class="timeline-header no-border"><a href="#">Description</a> Issue Solving</h3>
+                                  <h3 class="timeline-header no-border"><a href="#">Status</a> Onprocess</h3>
+                              </div>
+                          </div>
+                            <!-- END timeline item -->
+                            <div>
+                                <i class="fa fa-clock-o bg-gray"></i>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- /card -->
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- /.content -->
+
+  </div>
+<!-- /.content-wrapper -->
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -3306,6 +3701,8 @@
 <script src="plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
 <!-- Filterizr-->
 <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 
 <!-- DataTables -->
 <script src="plugins/datatables/jquery.dataTables.min.js"></script>
@@ -3343,6 +3740,10 @@
       $(this).addClass('active');
     });
 
+    $("input[data-bootstrap-switch]").each(function(){
+      $(this).bootstrapSwitch('state', $(this).prop('checked'));
+    });
+    
     $("#example1").DataTable({
       "paging": true,
       "lengthChange": false,
@@ -3424,6 +3825,16 @@
     });
 
     $('#example9').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $("#example10").DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
