@@ -319,10 +319,18 @@
           </li>
           <li class="nav-header">PROCUREMENT MANAGEMENT</li>
           <li class="nav-item">
-            <a href="#salesOrder" class="nav-link">
+            <a href="#purchaseRequest" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
-                Procurement
+                Purchase Request
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#purchaseOrder" class="nav-link">
+              <i class="nav-icon fas fa-industry"></i>
+              <p>
+                Purchase Order
               </p>
             </a>
           </li>
@@ -4673,6 +4681,632 @@
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+
+<!-- Halaman Purchase Request -->
+<div id="purchaseRequest" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Purchase Request</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Purchase Request</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#purchaseRequestAdd><button type="button" class="btn btn-primary btn-sx">New Purchase Request</button></a>
+            <table id="example14" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Purchase Request ID</th>
+                <th>Required By</th>
+                <th>Estimated Cost</th>
+                <th>Destination Warehouse</th>
+                <th>Vendor</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>#PR-20200001</td>
+                <td>Jan, 30 2020</td>
+                <td>Rp 10.000.000</td>
+                <td>Gudang Surabaya</td>
+                <td>Kayu Studio</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PR-20200002</td>
+                <td>Jan, 30 2020</td>
+                <td>Rp 14.000.000</td>
+                <td>Gudang Jakarta</td>
+                <td>Kayu Studio</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PR-20200003</td>
+                <td>Jan, 30 2020</td>
+                <td>Rp 20.000.000</td>
+                <td>Gudang Bandung</td>
+                <td>Kayu Studio</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PR-20200001</td>
+                <td>John Doe</td>
+                <td>Rp 10.000.000</td>
+                <td>Gudang Surabaya</td>
+                <td>Kayu Studio</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PR-20200002</td>
+                <td>Jan, 30 2020</td>
+                <td>Rp 14.000.000</td>
+                <td>Gudang Jakarta</td>
+                <td>Kayu Studio</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PR-20200003</td>
+                <td>John Doe</td>
+                <td>Rp 20.000.000</td>
+                <td>Gudang Bandung</td>
+                <td>Kayu Studio</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PR-20200002</td>
+                <td>Jan, 30 2020</td>
+                <td>Rp 14.000.000</td>
+                <td>Gudang Jakarta</td>
+                <td>Kayu Studio</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Purchase Request Add -->
+<div id="purchaseRequestAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Purchase Request</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#purchaseRequest">Purchase Request</a></li>
+            <li class="breadcrumb-item"><a href="#">Add New</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM PURCHASE REQUEST</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Purchase Request ID</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Default Required By</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Vendor</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Kayu Studio</option>
+                        <option>PT Jaya</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Default Destination Warehouse</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Gudang Jakarta</option>
+                        <option>Gudang Surabaya</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Cost Center</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Company</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- start of table-->
+                <hr/>
+                <h6>ITEMS</h6>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Item Number</th>
+                          <th>Description</th>
+                          <th>QTY</th>
+                          <th>UOM</th>
+                          <th>ESTIMATED COST</th>
+                          <th>TOTAL ESTIMATED COST</th>
+                          <th style="width: 40px"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="number" class="form-control" style="width:60px;"></td>
+                          <td>
+                            <select class="form-control" style="width:auto;">
+                              <option>-</option>
+                              <option>PCS</option>
+                              <option>Meter</option>
+                            </select>
+                          </td>
+                          <td><input type="number" class="form-control"></td>
+                          <td><input type="number" class="form-control"></td>
+                          <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                  </div>
+                </div>
+                <!-- end of table-->
+
+                <div class="row">
+                  <div class="col-sm-6">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Total</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+
+              </form>
+            </div>
+            <!-- /.card-body -->
+            <hr />
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Purchase Order -->
+<div id="purchaseOrder" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Purchase Order</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Purchase Order</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#purchaseOrderAdd><button type="button" class="btn btn-primary btn-sx">New Purchase Order</button></a>
+            <table id="example15" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Purchase Order ID</th>
+                <th>Date Posted</th>
+                <th>Required By</th>
+                <th>Destination Warehouse</th>
+                <th>Vendor</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>#PO-20200001</td>
+                <td>Jan, 01 2020</td>
+                <td>Jan, 30 2020</td>
+                <td>Gudang Surabaya</td>
+                <td>Kayu Studio</td>
+                <td>Rp 10.000.000</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PO-20200002</td>
+                <td>Jan, 01 2020</td>
+                <td>Jan, 30 2020</td>
+                <td>Gudang Bandung</td>
+                <td>Kayu Studio</td>
+                <td>Rp 15.000.000</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PO-20200001</td>
+                <td>Jan, 01 2020</td>
+                <td>Jan, 30 2020</td>
+                <td>Gudang Surabaya</td>
+                <td>Kayu Studio</td>
+                <td>Rp 10.000.000</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PO-20200002</td>
+                <td>Jan, 01 2020</td>
+                <td>Jan, 30 2020</td>
+                <td>Gudang Bandung</td>
+                <td>Kayu Studio</td>
+                <td>Rp 15.000.000</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PO-20200001</td>
+                <td>Jan, 01 2020</td>
+                <td>Jan, 30 2020</td>
+                <td>Gudang Surabaya</td>
+                <td>Kayu Studio</td>
+                <td>Rp 10.000.000</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PO-20200002</td>
+                <td>Jan, 01 2020</td>
+                <td>Jan, 30 2020</td>
+                <td>Gudang Bandung</td>
+                <td>Kayu Studio</td>
+                <td>Rp 15.000.000</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>#PO-20200001</td>
+                <td>Jan, 01 2020</td>
+                <td>Jan, 30 2020</td>
+                <td>Gudang Surabaya</td>
+                <td>Kayu Studio</td>
+                <td>Rp 10.000.000</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Purchase Order Add -->
+<div id="purchaseOrderAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Purchase Order</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#purchaseRequest">Purchase Order</a></li>
+            <li class="breadcrumb-item"><a href="#">Add New</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM PURCHASE ORDER</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Purchase Order ID</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Date Posted</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Vendor</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Kayu Studio</option>
+                        <option>PT Jaya</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Date Required</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Bill To</label>
+                      <textarea class="form-control" cols="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Ship To</label>
+                      <textarea class="form-control" cols="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Contact Person</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Destination Warehouse</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Gudang Jakarta</option>
+                        <option>Gudang Surabaya</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- start of table-->
+                <hr/>
+                <h6>ITEMS</h6>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Item Number</th>
+                          <th>Description</th>
+                          <th>QTY</th>
+                          <th>UOM</th>
+                          <th>ESTIMATED COST</th>
+                          <th>TOTAL ESTIMATED COST</th>
+                          <th style="width: 40px"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="number" class="form-control" style="width:60px;"></td>
+                          <td>
+                            <select class="form-control" style="width:auto;">
+                              <option>-</option>
+                              <option>PCS</option>
+                              <option>Meter</option>
+                            </select>
+                          </td>
+                          <td><input type="number" class="form-control"></td>
+                          <td><input type="number" class="form-control"></td>
+                          <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                  </div>
+                </div>
+                <!-- end of table-->
+
+                <div class="row">
+                  <div class="col-sm-6">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Total</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+                <!--form table Payment-->
+                <hr />
+                <h6 class="mb-3">Payments Terms</h6>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">#</th>
+                          <th>Payment Term</th>
+                          <th>Due Date</th>
+                          <th>Invoice Portion</th>
+                          <th>Payment Amount</th>
+                          <th style="width: 40px"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.</td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="date" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary btn-sx">Add Payment</button>
+                  </div>
+                </div>
+                <!-- end of table-->
+
+                <hr />
+                <div class="row">
+                  <h6 class="mb-3">Terms & Conditions</h6>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Term Title</label>
+                      <input type="text" class="form-control" style="width:200px;">
+                    </div>
+                    <textarea class="form-control" row="3"></textarea>
+                  </div>
+                </div>  
+
+              </form>
+            </div>
+            <!-- /.card-body -->
+            <hr />
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -4892,6 +5526,26 @@
     });
 
     $("#example13").DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $("#example14").DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $("#example15").DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
