@@ -52,6 +52,7 @@
       color: #222;
       border-color: #222;
     }
+
   </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed text-sm">
@@ -937,7 +938,7 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button type="button" class="btn btn-primary btn-sx">Add Item</button>
+                      <button type="button" class="btn btn-default btn-sx">Add Row</button>
                     </div>
                   </div>
                   <!-- end of table-->
@@ -981,7 +982,7 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button type="button" class="btn btn-primary btn-sx">Add Payment</button>
+                      <button type="button" class="btn btn-default btn-sx">Add Row</button>
                     </div>
                   </div>
                   <!-- end of table-->
@@ -1236,7 +1237,7 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button type="button" class="btn btn-primary btn-sx">Add Row</button>
+                      <button type="button" class="btn btn-default btn-sx">Add Row</button>
                     </div>
                   </div>
                   <!-- end of table-->
@@ -1802,13 +1803,7 @@
                       <div col="col-sm-6">
                         <div class="form-group">
                           <div class="input-group">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="exampleInputFile">
-                              <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                            </div>
-                            <div class="input-group-append">
-                              <span class="input-group-text" id="">Upload</span>
-                            </div>
+                            <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
                           </div>
                         </div>
                       </div>
@@ -2152,7 +2147,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="button" class="btn btn-primary btn-sx">Add Row</button>
+                    <button type="button" class="btn btn-default btn-sx">Add Row</button>
                   </div>
                 </div>
                 <!-- end of table-->
@@ -2200,13 +2195,7 @@
                   <div col="col-sm-6">
                     <div class="form-group">
                       <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                        </div>
-                        <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
-                        </div>
+                        <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
                       </div>
                     </div>
                   </div>
@@ -2214,7 +2203,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -2412,7 +2401,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="button" class="btn btn-primary btn-sx">Add Row</button>
+                    <button type="button" class="btn btn-default btn-sx">Add Row</button>
                   </div>
                 </div>
                 <!-- end of table-->
@@ -2460,13 +2449,7 @@
                   <div col="col-sm-6">
                     <div class="form-group">
                       <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                        </div>
-                        <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
-                        </div>
+                        <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
                       </div>
                     </div>
                   </div>
@@ -2474,7 +2457,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -3039,13 +3022,14 @@
                         </tr>
                       </tbody>
                     </table>
+                    <button type="button" class="btn btn-default btn-sx">Add Row</button>
                   </div>
                 </div>
                 <!-- end of table-->
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -3258,7 +3242,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -3304,91 +3288,106 @@
           <!-- /.card-header -->
           <div class="card-body">
             <a href=#mediaAdd><button id="btnMutasi" type="button" class="btn btn-primary btn-sx">Create Media</button></a>
-            
-            <div class="mt-2">
-              <div class="btn-group w-100 mb-2">
-                <a class="btn btn-info active" href="javascript:void(0)" data-filter="all"> All items </a>
-                <a class="btn btn-info" href="javascript:void(0)" data-filter="1"> Category 1 (WHITE) </a>
-                <a class="btn btn-info" href="javascript:void(0)" data-filter="2"> Category 2 (BLACK) </a>
-                <a class="btn btn-info" href="javascript:void(0)" data-filter="3"> Category 3 (COLORED) </a>
-                <a class="btn btn-info" href="javascript:void(0)" data-filter="4"> Category 4 (COLORED, BLACK) </a>
-              </div>
-              <div class="mb-2">
-                <a class="btn btn-secondary" href="javascript:void(0)" data-shuffle> Shuffle items </a>
-                <div class="float-right">
-                  <select class="custom-select" style="width: auto;" data-sortOrder>
-                    <option value="index"> Sort by Position </option>
-                    <option value="sortData"> Sort by Custom Data </option>
-                  </select>
-                  <div class="btn-group">
-                    <a class="btn btn-default" href="javascript:void(0)" data-sortAsc> Ascending </a>
-                    <a class="btn btn-default" href="javascript:void(0)" data-sortDesc> Descending </a>
-                  </div>
+           
+            <div class="mb-2 mt-3">
+              <a class="btn btn-default" href="javascript:void(0)" data-shuffle> Bulk Select </a>
+              <div class="float-right">
+                <select class="custom-select" style="width: auto;" data-sortOrder>
+                  <option value="index"> Sort by Position </option>
+                  <option value="sortData"> Sort by Custom Data </option>
+                </select>
+                <div class="btn-group">
+                  <a class="btn btn-default" href="javascript:void(0)" data-sortAsc> Ascending </a>
+                  <a class="btn btn-default" href="javascript:void(0)" data-sortDesc> Descending </a>
                 </div>
               </div>
             </div>
-            <div>
-              <div class="filter-container p-0 row">
-                <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                  <a href="https://via.placeholder.com/1200/FFFFFF.png?text=1" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2" alt="white sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                  <a href="https://via.placeholder.com/1200/000000.png?text=2" data-toggle="lightbox" data-title="sample 2 - black">
-                    <img src="https://via.placeholder.com/300/000000?text=2" class="img-fluid mb-2" alt="black sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
-                  <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" data-toggle="lightbox" data-title="sample 3 - red">
-                    <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=3" class="img-fluid mb-2" alt="red sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
-                  <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=4" data-toggle="lightbox" data-title="sample 4 - red">
-                    <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=4" class="img-fluid mb-2" alt="red sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                  <a href="https://via.placeholder.com/1200/000000.png?text=5" data-toggle="lightbox" data-title="sample 5 - black">
-                    <img src="https://via.placeholder.com/300/000000?text=5" class="img-fluid mb-2" alt="black sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                  <a href="https://via.placeholder.com/1200/FFFFFF.png?text=6" data-toggle="lightbox" data-title="sample 6 - white">
-                    <img src="https://via.placeholder.com/300/FFFFFF?text=6" class="img-fluid mb-2" alt="white sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                  <a href="https://via.placeholder.com/1200/FFFFFF.png?text=7" data-toggle="lightbox" data-title="sample 7 - white">
-                    <img src="https://via.placeholder.com/300/FFFFFF?text=7" class="img-fluid mb-2" alt="white sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                  <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
-                    <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="black sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
-                  <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=9" data-toggle="lightbox" data-title="sample 9 - red">
-                    <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=9" class="img-fluid mb-2" alt="red sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                  <a href="https://via.placeholder.com/1200/FFFFFF.png?text=10" data-toggle="lightbox" data-title="sample 10 - white">
-                    <img src="https://via.placeholder.com/300/FFFFFF?text=10" class="img-fluid mb-2" alt="white sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                  <a href="https://via.placeholder.com/1200/FFFFFF.png?text=11" data-toggle="lightbox" data-title="sample 11 - white">
-                    <img src="https://via.placeholder.com/300/FFFFFF?text=11" class="img-fluid mb-2" alt="white sample"/>
-                  </a>
-                </div>
-                <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
-                  <a href="https://via.placeholder.com/1200/000000.png?text=12" data-toggle="lightbox" data-title="sample 12 - black">
-                    <img src="https://via.placeholder.com/300/000000?text=12" class="img-fluid mb-2" alt="black sample"/>
-                  </a>
-                </div>
+           
+            <div class="row text-center text-lg-left">
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+                    </a>
               </div>
             </div>
 
@@ -3463,7 +3462,7 @@
               </div>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -3509,7 +3508,7 @@
           <!-- /.card-header -->
           <div class="card-body">
             <a href=#customerServiceAdd><button type="button" class="btn btn-primary btn-sx">Create Ticket</button></a>
-            <table id="example10" class="table table-bordered table-striped">
+            <table id="example10" class="table table-bordered table-striped display nowrap" style="width:100%">
               <thead>
               <tr>
                 <th>Due Date</th>
@@ -3665,7 +3664,7 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>So Number</label>
+                      <label>Sales Order ID</label>
                       <input type="text" class="form-control">
                     </div>
                   </div>
@@ -3717,33 +3716,7 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Topic</label>
-                      <select class="form-control" style="width:auto;">
-                        <option>-</option>
-                        <option>General</option>
-                        <option>Transaction</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputFile">Attachment</label>
-                      <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                        </div>
-                        <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
-                        </div>
-                      </div>
-                      <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                        </div>
-                        <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
-                        </div>
-                      </div>
+                      <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -3756,7 +3729,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -3805,7 +3778,8 @@
                       <span class="info-box-number" style="text-transform: capitalize;">Open</span>
                     </div>
                     <!-- /.info-box-content -->
-                    <button type="submit" class="btn btn-primary btn-sx">Change Due Date</button>
+                    
+                    <button type="button" class="btn btn-default btn-sx"><i class="fas fa-calendar-alt"></i></button>
                   </div>
                   <div class="card">
                       <div class="card-header">
@@ -3823,9 +3797,9 @@
                   <div class="card">
                     <div class="card-body">
                       <dl class="row">
-                        <dt class="col-sm-6">Topic</dt>
+                        <dt class="col-sm-6">Complaint Type</dt>
                         <dd class="col-sm-6">General</dd>
-                        <dt class="col-sm-6">So Number</dt>
+                        <dt class="col-sm-6">Sales Order ID</dt>
                         <dd class="col-sm-6">#SO00011</dd>
                         <dt class="col-sm-6">Customer Id</dt>
                         <dd class="col-sm-6">#CS00010</dd>
@@ -3855,24 +3829,19 @@
                   <div class="card">
                       <div class="card-body">
                         <div class="form-group">
-                          <input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-on-text="Solved" data-off-text="Not Solved">
+                          <div class="float-right">
+                            <input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-on-text="Solved" data-off-text="Not Solved">
+                          </div>
                         </div>
-                        <hr/>
                         <div class="form-group">
                           <label>Information</label>
                           <textarea class="form-control" row="3" style="width: 100%; height: 200px;"></textarea>
                         </div>
                         <div class="input-group">
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                          </div>
-                          <div class="input-group-append">
-                            <span class="input-group-text" id="">Attachment</span>
-                          </div>
+                          <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
                         </div>
                       </div>
-                      <hr />
+
                       <div class="card-footer">
                         <button type="submit" class="btn btn-primary btn-sx">Submit</button>
                         <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -4275,7 +4244,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -4568,7 +4537,7 @@
                        </tr>
                      </tbody>
                    </table>
-                   <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                   <input type="button" class="btn btn-default btn-xs" value="Add Row">
                  </div>
                </div>
 
@@ -4582,13 +4551,7 @@
                <div class="row">
                 <div class="col-sm-6">
                   <div class="input-group">
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="exampleInputFile">
-                      <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                    </div>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="">Upload</span>
-                    </div>
+                    <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
                   </div>
                 </div>
                </div>
@@ -4596,7 +4559,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -4844,7 +4807,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                    <input type="button" class="btn btn-default btn-xs" value="Add Row">
                   </div>
                 </div>
 
@@ -4869,7 +4832,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                    <input type="button" class="btn btn-default btn-xs" value="Add Row">
                   </div>
                 </div>
                 <!-- end of table-->
@@ -4914,14 +4877,14 @@
                         </tr>
                       </tbody>
                     </table>
-                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                    <input type="button" class="btn btn-default btn-xs" value="Add Row">
                   </div>
                 </div>
                 
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -5230,7 +5193,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                    <input type="button" class="btn btn-default btn-xs" value="Add Row">
                   </div>
                 </div>
 
@@ -5257,7 +5220,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                    <input type="button" class="btn btn-default btn-xs" value="Add Row">
                   </div>
                 </div>
                 <!-- end of table-->
@@ -5304,7 +5267,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -5565,7 +5528,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                    <input type="button" class="btn btn-default btn-xs" value="Add Row">
                   </div>
                 </div>
                 <!-- end of table-->
@@ -5585,7 +5548,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -5867,7 +5830,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <input type="button" class="btn btn-primary btn-xs" value="Add Row">
+                    <input type="button" class="btn btn-default btn-xs" value="Add Row">
                   </div>
                 </div>
                 <!-- end of table-->
@@ -5910,7 +5873,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="button" class="btn btn-primary btn-sx">Add Payment</button>
+                    <button type="button" class="btn btn-default btn-sx">Add Row</button>
                   </div>
                 </div>
                 <!-- end of table-->
@@ -5930,7 +5893,7 @@
               </form>
             </div>
             <!-- /.card-body -->
-            <hr />
+            
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-sx">Submit</button>
               <button type="button" class="btn btn-default btn-sx">Cancel</button>
@@ -5996,10 +5959,6 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-<!-- Ekko Lightbox -->
-<script src="plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
-<!-- Filterizr-->
-<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
 <!-- Bootstrap Switch -->
 <script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 
@@ -6024,19 +5983,6 @@
         if(this.checked) {
           $('#btnMutasi').show();
         }
-    });
-
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-      event.preventDefault();
-      $(this).ekkoLightbox({
-        alwaysShowClose: true
-      });
-    });
-
-    $('.filter-container').filterizr({gutterPixels: 3});
-    $('.btn[data-filter]').on('click', function() {
-      $('.btn[data-filter]').removeClass('active');
-      $(this).addClass('active');
     });
 
     $("input[data-bootstrap-switch]").each(function(){
@@ -6137,10 +6083,7 @@
       "paging": true,
       "lengthChange": false,
       "searching": true,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
+      "scrollX": true
     });
 
     $("#example11").DataTable({
