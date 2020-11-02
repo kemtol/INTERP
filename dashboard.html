@@ -378,80 +378,22 @@
               </p>
             </a>
           </li>
-          <li class="nav-header">SETTING</li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-header">USER MANAGEMENT</li>
+          <li class="nav-item">
+            <a href="#user" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                User Management
-                <i class="right fas fa-angle-left"></i>
+                User
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>User</p>
-                  <i class="right fas fa-angle-left"></i>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Lisr User</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index2.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add User</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Role</p>
-                  <i class="right fas fa-angle-left"></i>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Lisr Role</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index2.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add Role</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Access</p>
-                  <i class="right fas fa-angle-left"></i>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>List Access</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index2.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add Access</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#role" class="nav-link">
+              <i class="nav-icon fas fa-user-circle"></i>
+              <p>
+                Role
+              </p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -3059,10 +3001,6 @@
                       <div class=" card-body" id="timeline">
                           <!-- The timeline -->
                           <div class="timeline timeline-inverse">
-
-                              
-                          <!-- tracking logs from db by diwa -->
-                                                              <!-- timeline item -->
                               <div>
                                   <i class="fa fa-comments bg-yellow"></i>
 
@@ -3073,12 +3011,6 @@
                                       <h3 class="timeline-header no-border"><a href="#">Status</a> onprocess</h3>
                                   </div>
                               </div>
-                              <!-- END timeline item -->
-                              
-
-
-                  
-                              <!-- END timeline item -->
                               <div>
                                   <i class="fa fa-clock-o bg-gray"></i>
                               </div>
@@ -5909,6 +5841,7 @@
 </div>
 <!-- /.content-wrapper -->
 
+
 <!-- Halaman Purchase Order -->
 <div id="purchaseOrder" class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -6253,6 +6186,231 @@
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+
+<!-- Halaman User -->
+<div id="user" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">User</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">User</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#userAdd><button type="button" class="btn btn-primary btn-sx">New User</button></a>
+            <table id="example19" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Id</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Date Created</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>Admin 1</td>
+                <td>admin@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>User 1</td>
+                <td>user@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Admin 2</td>
+                <td>admin2@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>User 2</td>
+                <td>User@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Admin 1</td>
+                <td>admin@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>User 1</td>
+                <td>user@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Admin 2</td>
+                <td>admin2@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Customer Add -->
+<div id="userAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Create User</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#user">User</a></li>
+            <li class="breadcrumb-item"><a href="#">Add New</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM USER</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Full name">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-user"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="email" class="form-control" placeholder="Email">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-envelope"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control" placeholder="Password">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-lock"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control" placeholder="Retype password">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-lock"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Role">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-user-circle"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <img src="dist/img/pp.png" class="img-size-250 mb-2">
+                        <div class="text-center">
+                          <button type="button text-center" class="btn btn-default btx-sx">
+                            <i class="fas fa-upload"></i> Upload
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+            
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -6502,6 +6660,16 @@
     });
 
     $("#example18").DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $("#example19").DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
