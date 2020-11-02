@@ -6221,7 +6221,7 @@
             <table id="example19" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Id</th>
+                <th>ID</th>
                 <th>User Name</th>
                 <th>Email</th>
                 <th>Date Created</th>
@@ -6302,7 +6302,7 @@
 </div>
 <!-- /.content-wrapper -->
 
-<!-- Halaman Customer Add -->
+<!-- Halaman User Add -->
 <div id="userAdd" class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
@@ -6393,6 +6393,197 @@
                     </div>
                   </div>
                 </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+            
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+<!-- Halaman Role -->
+<div id="role" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Role</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Role</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#roleAdd><button type="button" class="btn btn-primary btn-sx">New Role</button></a>
+            <table id="example20" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Created Date</th>
+                <th>Modified Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>Admin</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Super Admin</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>User</td>
+                <td>admin2@mail.com</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>User 2</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 01-2020</td>
+                <td><span class="badge bg-success">Active</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Role Add -->
+<div id="userAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Create Role</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#role">Role</a></li>
+            <li class="breadcrumb-item"><a href="#">Add New</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM ROLE</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="form-group">
+                  <label for="name" class="col-sm-4 control-label">Role Name *</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="name" name="name" required="" autocomplete="off" placeholder="Masukkan Nama Role">
+                  </div>
+                </div>    
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- Select multiple-->
+                    <div class="form-group">
+                      <label>Permision</label>
+                      <select multiple class="form-control">
+                        <optgroup label="PROFILE">
+                          <option>Update</option>
+                          <option>Create</option>
+                          <option>Read</option>
+                      </optgroup>
+                      <optgroup label="SALES MANAGEMENT">
+                          <option>Delete</option>
+                          <option>Update</option>
+                          <option>Create</option>
+                          <option>Read</option>
+                      </optgroup>
+                      <optgroup label="CRM">
+                        <option>Delete</option>
+                        <option>Update</option>
+                        <option>Create</option>
+                        <option>Read</option>
+                      </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>&nbsp;</label>
+                      <select multiple class="form-control">
+                        <optgroup label="CRM">
+                          <option>Create</option>
+                          <option>Update</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
               </form>
             </div>
             <!-- /.card-body -->
@@ -6670,6 +6861,16 @@
     });
 
     $("#example19").DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $("#example20").DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
