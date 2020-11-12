@@ -32,6 +32,8 @@
   <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 
+  <link rel="stylesheet" href="plugins/tree-view/css/jquery.treegrid.css">
+
   <style>
     /* layout.css Style */
     .upload-drop-zone {
@@ -488,7 +490,7 @@
           </li>
           <li class="nav-header">MASTER DATA MANAGEMENT</li>
           <li class="nav-item">
-            <a href="#user" class="nav-link">
+            <a href="#warehouse" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Master Warehouse
@@ -3748,104 +3750,46 @@
     <!-- Main content -->
   <section class="content">
     <div class="container">
-      <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-12">
-        <div class="card">
-          <div class="card-body" style="width: 200px;">
-              <a href="#mutasi"><button type="button" class="btn btn-block btn-secondary">New Mutasi</button></a>
-          </div>
-        </div>
         <div class="card">
           <!-- /.card-header -->
           <div class="card-body">
             <div class="row">
               <div class="col-sm-6">
-                <select class="form-control" style="width:auto;">
-                  <option>Warehouse Jakarta</option>
-                  <option>Warehouse Bandung</option>
-                  <option>Warehouse Surabaya</option>
-                </select>
-              </div>
-              <div class="col-sm-6">
-                <a href=#mutasi><button id="btnMutasi" type="button" class="btn btn-primary btn-sx float-right" style="display:none;">Mutasi</button></a>
+                <a href=#warehouseAdd><button type="button" class="btn btn-primary btn-sx">Create Warehouse</button></a>
               </div>
             </div>
             
-            <table id="example8" class="table table-bordered table-striped">
+            <table id="example8" class="tree table table-bordered table-striped">
               <thead>
-              <tr>
-                <th style="width:20px"></th>
-                <th>Item ID</th>
-                <th>Item Name</th>
-                <th>Category</th>
-                <th>Stok</th>
-                <th></th>
+                <tr>
+                  <th>Warehouse</th>
+                  <th>Ammount Value</th>
+                </tr>
+                </thead>
+              <tr class="treegrid-1">
+                <td>Company Name</td><td>Rp. 1.000.000</td>
               </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>
-                  <input class="wchk" type="checkbox">
-                </td>
-                <td>000123</td>
-                <td>Lemari</td>
-                <td>Product</td>
-                <td>200</td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              <tr class="treegrid-2 treegrid-parent-1">
+                <td>Main Warehouse 1</td><td>Rp. 700.000</td>
               </tr>
-              <tr>
-                <td>
-                  <input class="wchk" type="checkbox">
-                </td>
-                <td>000123</td>
-                <td>Sofa</td>
-                <td>Product</td>
-                <td>400</td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              <tr class="treegrid-3 treegrid-parent-2">
+                <td>Store Warehouse</td><td>Rp. 500.000</td>
               </tr>
-              <tr>
-                <td>
-                  <input class="wchk" type="checkbox">
-                </td>
-                <td>000123</td>
-                <td>Paku</td>
-                <td>item</td>
-                <td>2000</td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              <tr class="treegrid-4 treegrid-parent-2">
+                <td>Reject Warehouse</td><td>Rp. 100.000</td>
               </tr>
-              <tr>
-                <td>
-                  <input class="wchk" type="checkbox">
-                </td>
-                <td>000123</td>
-                <td>Meja</td>
-                <td>Product</td>
-                <td>20</td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              <tr class="treegrid-5 treegrid-parent-2">
+                <td>Repair Warehouse</td><td>Rp. 100.000</td>
               </tr>
-              <tr>
-                <td>
-                  <input class="wchk" type="checkbox">
-                </td>
-                <td>000123</td>
-                <td>Cat Kayu</td>
-                <td>Product</td>
-                <td>600</td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              <tr class="treegrid-6 treegrid-parent-1">
+                <td>Main Warehouse 2</td><td>Rp. 300.000</td>
               </tr>
-              <tr>
-                <td>
-                  <input class="wchk" type="checkbox">
-                </td>
-                <td>000123</td>
-                <td>Koas</td>
-                <td>Item</td>
-                <td>1200</td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-info-circle"></i></a></td>
+              <tr class="treegrid-7 treegrid-parent-6">
+                <td>Store Warehouse</td><td>Rp. 300.000</td>
               </tr>
-              </tbody>
-            </table>
+            </table>	  
           </div>
           <!-- /.card-body -->
         </div>
@@ -3859,6 +3803,128 @@
   <!-- /.content -->
   </div>
 <!-- /.content-wrapper -->
+
+<!-- Halaman Mutasi Add -->
+  <div id="warehouseAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Warehouse</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#warehouse">Warehouse</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM WAREHOUSE</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Warehouse Code</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Account</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Warehouse</option>
+                        <option>Warehouse</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Company</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Company A</option>
+                        <option>Company B</option>
+                        <option>Company C</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Warehouse Type</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>-</option>
+                        <option>Store</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    
+                    <input type="checkbox">
+                    <label>&nbsp;Disabled</label>
+                  </div>
+                  <div class="col-sm-6"></div>
+                </div>
+
+                <!--form table-->
+                <hr/>
+                <h6>ADDRESS AND CONTACT</h6>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Address</label>
+                      <textarea class="form-control" col="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Address</label>
+                      <textarea class="form-control" col="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+            
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+<!-- /.content-wrapper -->
+
 
 <!-- Halaman Mutasi Add -->
   <div id="mutasi" class="content-wrapper">
@@ -7746,15 +7812,21 @@
 
 <!-- Text Editor -->
 <script src="plugins/summernote/summernote-bs4.min.js"></script>
-<script>
-  $(function () {
-    // Summernote
-    $('.textedit').summernote()
-  })
-</script>
+
+<!-- tree-view -->
+<script src="plugins/tree-view/js/jquery.treegrid.js"></script>
+<script src="plugins/tree-view/js/jquery.treegrid.bootsrap3.js"></script>
+
 <!-- page script -->
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('.tree').treegrid();
+  });
+</script>
+
 <script>
   $(function () {
+    $('.textedit').summernote();
 
     //FORM CONTACT SWITCH
     $('#type_contact').on('change', function() {
@@ -7858,7 +7930,7 @@
       "paging": true,
       "lengthChange": false,
       "searching": true,
-      "ordering": true,
+      "ordering": false,
       "info": true,
       "autoWidth": false,
       "responsive": true,
