@@ -6961,11 +6961,10 @@
             <table id="example14" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Purchase Request ID</th>
+                <th>Purchase Request Code</th>
                 <th>Required By</th>
                 <th>Estimated Cost</th>
                 <th>Destination Warehouse</th>
-                <th>Vendor</th>
                 <th>Status</th>
                 <th></th>
               </tr>
@@ -6976,8 +6975,7 @@
                 <td>Jan, 30 2020</td>
                 <td>Rp 10.000.000</td>
                 <td>Gudang Surabaya</td>
-                <td>Kayu Studio</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Approved</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
@@ -6985,8 +6983,7 @@
                 <td>Jan, 30 2020</td>
                 <td>Rp 14.000.000</td>
                 <td>Gudang Jakarta</td>
-                <td>Kayu Studio</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Approved</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
@@ -6994,8 +6991,7 @@
                 <td>Jan, 30 2020</td>
                 <td>Rp 20.000.000</td>
                 <td>Gudang Bandung</td>
-                <td>Kayu Studio</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Approved</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
@@ -7003,8 +6999,7 @@
                 <td>John Doe</td>
                 <td>Rp 10.000.000</td>
                 <td>Gudang Surabaya</td>
-                <td>Kayu Studio</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Approved</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
@@ -7012,8 +7007,7 @@
                 <td>Jan, 30 2020</td>
                 <td>Rp 14.000.000</td>
                 <td>Gudang Jakarta</td>
-                <td>Kayu Studio</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Approved</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
@@ -7021,8 +7015,7 @@
                 <td>John Doe</td>
                 <td>Rp 20.000.000</td>
                 <td>Gudang Bandung</td>
-                <td>Kayu Studio</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Approved</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
@@ -7030,8 +7023,7 @@
                 <td>Jan, 30 2020</td>
                 <td>Rp 14.000.000</td>
                 <td>Gudang Jakarta</td>
-                <td>Kayu Studio</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Approved</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               </tbody>
@@ -7089,7 +7081,7 @@
                   <div class="col-sm-6">
                     <!-- text input -->
                     <div class="form-group">
-                      <label>Purchase Request ID</label>
+                      <label>Purchase Request Code</label>
                       <input type="text" class="form-control">
                     </div>
                   </div>
@@ -7103,32 +7095,25 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Vendor</label>
-                      <select class="form-control" style="width:auto;">
-                        <option>-</option>
-                        <option>Kayu Studio</option>
-                        <option>PT Jaya</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
                       <label>Default Destination Warehouse</label>
                       <select class="form-control" style="width:auto;">
-                        <option>-</option>
+                        <option>Input Destination Warehouse</option>
                         <option>Gudang Jakarta</option>
                         <option>Gudang Surabaya</option>
                       </select>
                     </div>
                   </div>
-                </div>
-                <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Cost Center</label>
-                      <input type="text" class="form-control">
+                      <select class="form-control" style="width:auto;">
+                        <option>Choose Cost Center</option>
+                        <option>Gudang Jakarta</option>
+                      </select>
                     </div>
                   </div>
+                </div>
+                <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Company</label>
@@ -7149,8 +7134,10 @@
                           <th>Description</th>
                           <th>QTY</th>
                           <th>UOM</th>
-                          <th>ESTIMATED COST</th>
-                          <th>TOTAL ESTIMATED COST</th>
+                          <th>Required</th>
+                          <th>Currency</th>
+                          <th>Estimated Cost</th>
+                          <th>User</th>
                           <th style="width: 40px"></th>
                         </tr>
                       </thead>
@@ -7166,8 +7153,10 @@
                               <option>Meter</option>
                             </select>
                           </td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
                           <td><input type="number" class="form-control"></td>
-                          <td><input type="number" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
                           <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
                         </tr>
                       </tbody>
@@ -7177,17 +7166,26 @@
                 </div>
                 <!-- end of table-->
 
+                <hr/>
+                <h6>CURRENCY</h6>
                 <div class="row">
                   <div class="col-sm-6">
-                  </div>
-                  <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Total</label>
+                      <label>Default Purchase Currency</label>
                       <input type="text" class="form-control">
                     </div>
                   </div>
                 </div>
 
+                <hr/>
+                <h6>NOTES</h6>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <textarea class="form-control" col="3"></textarea>
+                    </div>
+                  </div>
+                </div>
 
               </form>
             </div>
@@ -7242,11 +7240,11 @@
             <table id="example15" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Purchase Order ID</th>
+                <th>Purchase Order Code</th>
                 <th>Date Posted</th>
                 <th>Required By</th>
-                <th>Destination Warehouse</th>
                 <th>Vendor</th>
+                <th>Destination Warehouse</th>
                 <th>Total</th>
                 <th>Status</th>
                 <th></th>
@@ -7254,73 +7252,73 @@
               </thead>
               <tbody>
               <tr>
-                <td>#PO-20200001</td>
-                <td>Jan, 01 2020</td>
-                <td>Jan, 30 2020</td>
+                <td>PR-202000011</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td>Kayu Studio</td>
                 <td>Gudang Surabaya</td>
-                <td>Kayu Studio</td>
                 <td>Rp 10.000.000</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-primary">Requested</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
-                <td>#PO-20200002</td>
-                <td>Jan, 01 2020</td>
-                <td>Jan, 30 2020</td>
-                <td>Gudang Bandung</td>
+                <td>PR-202010021</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
                 <td>Kayu Studio</td>
-                <td>Rp 15.000.000</td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
-              </tr>
-              <tr>
-                <td>#PO-20200001</td>
-                <td>Jan, 01 2020</td>
-                <td>Jan, 30 2020</td>
                 <td>Gudang Surabaya</td>
-                <td>Kayu Studio</td>
                 <td>Rp 10.000.000</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-primary">Requested</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
-                <td>#PO-20200002</td>
-                <td>Jan, 01 2020</td>
-                <td>Jan, 30 2020</td>
-                <td>Gudang Bandung</td>
+                <td>PR-202012301</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
                 <td>Kayu Studio</td>
-                <td>Rp 15.000.000</td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
-              </tr>
-              <tr>
-                <td>#PO-20200001</td>
-                <td>Jan, 01 2020</td>
-                <td>Jan, 30 2020</td>
                 <td>Gudang Surabaya</td>
-                <td>Kayu Studio</td>
                 <td>Rp 10.000.000</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-primary">Requested</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               <tr>
-                <td>#PO-20200002</td>
-                <td>Jan, 01 2020</td>
-                <td>Jan, 30 2020</td>
-                <td>Gudang Bandung</td>
+                <td>PR-202011121</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
                 <td>Kayu Studio</td>
-                <td>Rp 15.000.000</td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
-              </tr>
-              <tr>
-                <td>#PO-20200001</td>
-                <td>Jan, 01 2020</td>
-                <td>Jan, 30 2020</td>
                 <td>Gudang Surabaya</td>
-                <td>Kayu Studio</td>
                 <td>Rp 10.000.000</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PR-202099211</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td>Kayu Studio</td>
+                <td>Gudang Surabaya</td>
+                <td>Rp 10.000.000</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PR-202034441</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td>Kayu Studio</td>
+                <td>Gudang Surabaya</td>
+                <td>Rp 10.000.000</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PR-202011112</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td>Kayu Studio</td>
+                <td>Gudang Surabaya</td>
+                <td>Rp 10.000.000</td>
+                <td><span class="badge bg-success">Completed</span></td>
                 <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
               </tr>
               </tbody>
@@ -7378,7 +7376,7 @@
                   <div class="col-sm-6">
                     <!-- text input -->
                     <div class="form-group">
-                      <label>Purchase Order ID</label>
+                      <label>Purchase Order Code</label>
                       <input type="text" class="form-control">
                     </div>
                   </div>
@@ -7392,6 +7390,12 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
+                      <label>Reference</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
                       <label>Vendor</label>
                       <select class="form-control" style="width:auto;">
                         <option>-</option>
@@ -7400,10 +7404,21 @@
                       </select>
                     </div>
                   </div>
+                </div>
+                <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Date Required</label>
                       <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Destination Warehouse</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>Gudang Surabaya</option>
+                        <option>Gudang Jakarta</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -7424,18 +7439,22 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Contact Person</label>
+                      <label>Contact PIC Name</label>
                       <input type="text" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Destination Warehouse</label>
-                      <select class="form-control" style="width:auto;">
-                        <option>-</option>
-                        <option>Gudang Jakarta</option>
-                        <option>Gudang Surabaya</option>
-                      </select>
+                      <label>Contact PIC Number</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Contact PIC Email Address</label>
+                      <input type="text" class="form-control">
                     </div>
                   </div>
                 </div>
@@ -7485,9 +7504,26 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
+                      <label>Delivery Fee</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label>Discount</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
                       <label>Total</label>
                       <input type="text" class="form-control">
                     </div>
+                  </div>
+                </div>
+
+                <hr />
+                <h6 class="mb-3">CURRENCY</h6>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label>Purchase Currency</label>
+                    <input type="text" class="form-control">
                   </div>
                 </div>
 
