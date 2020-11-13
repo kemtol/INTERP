@@ -363,7 +363,7 @@
           </li>-->
           <li class="nav-header">WAREHOUSE MANAGEMENT</li>
           <li class="nav-item">
-            <a href="#warehouse" class="nav-link">
+            <a href="#stockTransportOrder" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
                 Stock Transport Order
@@ -379,7 +379,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#goodissue" class="nav-link">
+            <a href="#goodreceived" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
                 Good Received
@@ -387,7 +387,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#goodissue" class="nav-link">
+            <a href="#pickingList" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
                 Picking List
@@ -395,7 +395,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#goodissue" class="nav-link">
+            <a href="#qualityInspection" class="nav-link">
               <i class="nav-icon fas fa-industry"></i>
               <p>
                 Quality Inspection
@@ -4702,93 +4702,115 @@
             <table id="example10" class="table table-bordered table-striped display nowrap" style="width:100%">
               <thead>
               <tr>
-                <th>Due Date</th>
-                <th>Action</th>
-                <th>Status</th>
                 <th>Ticket Id</th>
-                <th>Customer Id</th>
-                <th>Date</th>
+                <th>Customer</th>
+                <th>Date Posted</th>
+                <th>Due Date</th>
                 <th>Topic</th>
-                <th>Compliner Name</th>
-                <th>Compliner Email</th>
-                <th>Compliner Contact</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Status</th>
+                <th>Action</th>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td>Jan, 10 2020</td>
+                <td>HD2020001</td>
+                <td>Jhon Due</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 10-2020</td>
+                <td>General</td>
+                <td>jhon@dot.com</td>
+                <td>0812362837</td>
+                <td><span class="badge bg-primary">Open</span></td>
                 <td>
                   <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
                   <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
                 </td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td>#2020001</td>
-                <td>1234567</td>
-                <td>Jan, 01 2020</td>
-                <td>General</td>
-                <td>Rambo</td>
-                <td>rambo@dot.com</td>
-                <td>0812362837</td>
               </tr>
               <tr>
-                <td>Jan, 10 2020</td>
+                <td>HD2020002</td>
+                <td>Jhon Due</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 10-2020</td>
+                <td>General</td>
+                <td>jhon@dot.com</td>
+                <td>0812362837</td>
+                <td><span class="badge bg-success">Solved</span></td>
                 <td>
                   <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
                   <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
                 </td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td>#2020001</td>
-                <td>1234567</td>
-                <td>Jan, 01 2020</td>
-                <td>General</td>
-                <td>Rambo</td>
-                <td>rambo@dot.com</td>
-                <td>0812362837</td>
               </tr>
               <tr>
-                <td>Jan, 10 2020</td>
+                <td>HD2020002</td>
+                <td>Jhon Due</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 10-2020</td>
+                <td>General</td>
+                <td>jhon@dot.com</td>
+                <td>0812362837</td>
+                <td><span class="badge bg-primary">Open</span></td>
                 <td>
                   <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
                   <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
                 </td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td>#2020001</td>
-                <td>1234567</td>
-                <td>Jan, 01 2020</td>
-                <td>General</td>
-                <td>Rambo</td>
-                <td>rambo@dot.com</td>
-                <td>0812362837</td>
               </tr>
               <tr>
-                <td>Jan, 10 2020</td>
+                <td>HD2020002</td>
+                <td>Jhon Due</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 10-2020</td>
+                <td>General</td>
+                <td>jhon@dot.com</td>
+                <td>0812362837</td>
+                <td><span class="badge bg-success">Solved</span></td>
                 <td>
                   <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
                   <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
                 </td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td>#2020001</td>
-                <td>1234567</td>
-                <td>Jan, 01 2020</td>
-                <td>General</td>
-                <td>Rambo</td>
-                <td>rambo@dot.com</td>
-                <td>0812362837</td>
               </tr>
               <tr>
-                <td>Jan, 10 2020</td>
+                <td>HD2020002</td>
+                <td>Jhon Due</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 10-2020</td>
+                <td>General</td>
+                <td>jhon@dot.com</td>
+                <td>0812362837</td>
+                <td><span class="badge bg-success">Solved</span></td>
                 <td>
                   <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
                   <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
                 </td>
-                <td><span class="badge bg-success">Active</span></td>
-                <td>#2020001</td>
-                <td>1234567</td>
-                <td>Jan, 01 2020</td>
+              </tr>
+              <tr>
+                <td>HD2020002</td>
+                <td>Jhon Due</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 10-2020</td>
                 <td>General</td>
-                <td>Rambo</td>
-                <td>rambo@dot.com</td>
+                <td>jhon@dot.com</td>
                 <td>0812362837</td>
+                <td><span class="badge bg-success">Solved</span></td>
+                <td>
+                  <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>HD2020002</td>
+                <td>Jhon Due</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 10-2020</td>
+                <td>General</td>
+                <td>jhon@dot.com</td>
+                <td>0812362837</td>
+                <td><span class="badge bg-primary">Active</span></td>
+                <td>
+                  <a href="#ticketView" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a>
+                  <a href="#ticketView" class="btn btn-success btn-xs"><i class="fas fa-info-circle"></i></a>
+                </td>
               </tr>
               </tbody>
             </table>
@@ -4843,11 +4865,38 @@
               <form role="form">
                 <div class="row">
                   <div class="col-sm-6">
-                    <!-- text input -->
                     <div class="form-group">
-                      <label>Complaint Type</label>
+                      <label>Ticket ID</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Topic</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Date Posted</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Date Due</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Reference</label>
                       <select class="form-control" style="width:auto;">
-                        <option>-</option>
+                        <option>Choose Reference</option>
                         <option>Non-Delivery</option>
                         <option>Delivery</option>
                       </select>
@@ -4855,7 +4904,25 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Sales Order ID</label>
+                      <label>Customer</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>Choose Customer</option>
+                        <option>A</option>
+                        <option>B</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Customer Email</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Customer Contact Number</label>
                       <input type="text" class="form-control">
                     </div>
                   </div>
@@ -4863,57 +4930,25 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Complainer Name</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>AWB</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Complainer Email</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Customer Id</label>
-                      <input type="text" class="form-control">
+                      <label>Helpdesk Status</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>Choose Status</option>
+                        <option>Open</option>
+                        <option>Solved</option>
+                      </select>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Complainer Phone</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Customer Name</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                </div>
-              
+
                 <hr/>
                 <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <label>Description</label>
                       <textarea class="form-control" row="3" style="width: 100%; height: 200px;"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="button" class="btn btn-default btn-sx"><i class="fas fa-paperclip"></i>Attachment</button>
                     </div>
                   </div>
                 </div>
@@ -7934,6 +7969,257 @@
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+
+<!-- Halaman Picking List -->
+<div id="pickingList" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Picking List</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Picking List</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <!-- /.card-header -->
+          <div class="card-body">
+            <a href=#pickingListAdd><button type="button" class="btn btn-primary btn-sx">New Picking List</button></a>
+            <table id="example21" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Picking List Code </th>
+                <th>Reference</th>
+                <th>Activation Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>PL-123455</td>
+                <td>SO/20/10/0089</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PL-123455</td>
+                <td>SO/20/10/0089</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PL-3456213</td>
+                <td>SO/20/10/0089</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PL-425613</td>
+                <td>SO/20/10/0089</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PL-123512</td>
+                <td>SO/20/10/0089</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              <tr>
+                <td>PL-028371</td>
+                <td>SO/20/10/0089</td>
+                <td>Jan, 01-2020</td>
+                <td>Jan, 30-2020</td>
+                <td><span class="badge bg-success">Completed</span></td>
+                <td><a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        </div>
+        <!-- /.card -->
+        
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Halaman Repair Maintenance Add -->
+<div id="pickingListAdd" class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Create Picking List</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#pickingList">Picking List</a></li>
+            <li class="breadcrumb-item"><a href="#">Add New</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container">
+      <!-- Small boxes (Stat box) -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <!-- general form elements disabled -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">FORM PICKING LIST</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Picking List Code</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Activation Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>End Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Purpose</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>Choose Picking Purpose</option>
+                        <option>a</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Reference</label>
+                      <select class="form-control" style="width:auto;">
+                        <option>Chooes Reference</option>
+                        <option>a</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              
+               <!--form table-->
+               <hr/>
+               <div class="row mb-5">
+                 <div class="col-sm-12">
+                   <table class="table table-bordered">
+                     <thead>
+                       <tr>
+                         <th>Item Number</th>
+                         <th>Description</th>
+                         <th>Order QTY</th>
+                         <th>UOM</th>
+                         <th>Delivery Date</th>
+                         <th>QTY Picked</th>
+                         <th>QTY Remaining</th>
+                         <th>Rack Location</th>
+                         <th style="width: 40px;"></th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="number" class="form-control"></td>
+                          <td>
+                            <select class="form-control" style="width:auto;">
+                              <option>-</option>
+                              <option>PCS</option>
+                            </select>
+                          </td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="number" class="form-control"></td>
+                          <td><input type="number" class="form-control"></td>
+                          <td>
+                            <select class="form-control" style="width:auto;">
+                              <option>-</option>
+                              <option>PCS</option>
+                            </select>
+                          </td>
+                          <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                   <input type="button" class="btn btn-default btn-xs" value="Add Row">
+                 </div>
+               </div>
+
+              </form>
+            </div>
+            <!-- /.card-body -->
+            
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary btn-sx">Submit</button>
+              <button type="button" class="btn btn-default btn-sx">Cancel</button>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
   
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -8228,6 +8514,16 @@
     });
 
     $("#example20").DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $("#example21").DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": true,
