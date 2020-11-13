@@ -785,11 +785,10 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Quotation Number</th>
+                  <th>Quotation Code</th>
                   <th>Start Date</th>
                   <th>End Date</th>
                   <th>Customer</th>
-                  <th>Sales Person</th>
                   <th>Total</th>
                   <th>Status</th>
                   <th></th>
@@ -801,7 +800,6 @@
                   <td>Jan, 01-2020</td>
                   <td>Jan, 10-2020</td>
                   <td>PT. AABBCC</td>
-                  <td>Mrs. XYZXZ</td>
                   <td>Rp. 1000000</td>
                   <td><span class="badge bg-primary">Sales Order</span></td>
                   <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
@@ -811,7 +809,6 @@
                   <td>Jan, 25-2020</td>
                   <td>Jan, 10-2020</td>
                   <td>PT. DDDFFF</td>
-                  <td>Mrs. yyy</td>
                   <td>Rp. 3000000</td>
                   <td><span class="badge bg-primary">Sales Order</span></td>
                   <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
@@ -821,7 +818,6 @@
                   <td>Jan, 20-2020</td>
                   <td>Jan, 10-2020</td>
                   <td>PT. GGGRRRR</td>
-                  <td>Mrs. EFFFF</td>
                   <td>Rp. 5000000</td>
                   <td><span class="badge bg-danger">Canceled</span></td>
                   <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
@@ -831,7 +827,6 @@
                   <td>Jan, 04-2020</td>
                   <td>Jan, 10-2020</td>
                   <td>PT. HIJKL</td>
-                  <td>Mrs. AIEO</td>
                   <td>Rp. 5000000</td>
                   <td><span class="badge bg-danger">Canceled</span></td>
                   <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
@@ -841,7 +836,6 @@
                   <td>Jan, 01-2020</td>
                   <td>Jan, 10-2020</td>
                   <td>PT. AABBCC</td>
-                  <td>Mrs. XYZXZ</td>
                   <td>Rp. 1000000</td>
                   <td><span class="badge bg-primary">Sales Order</span></td>
                   <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
@@ -851,7 +845,6 @@
                   <td>Jan, 25-2020</td>
                   <td>Jan, 10-2020</td>
                   <td>PT. DDDFFF</td>
-                  <td>Mrs. yyy</td>
                   <td>Rp. 3000000</td>
                   <td><span class="badge bg-primary">Sales Order</span></td>
                   <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
@@ -861,7 +854,6 @@
                   <td>Jan, 25-2020</td>
                   <td>Jan, 10-2020</td>
                   <td>PT. DDDFFF</td>
-                  <td>Mrs. yyy</td>
                   <td>Rp. 3000000</td>
                   <td><span class="badge bg-primary">Sales Order</span></td>
                   <td><a href="" class="btn btn-info btn-xs"><i class="fas fa-edit"></i></a></td>
@@ -921,7 +913,7 @@
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Quotation No</label>
+                        <label>Quotation Code</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
@@ -950,12 +942,36 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Order Type</label>
-                        <select class="form-control">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
+                        <label>Ship To</label>
+                        <textarea class="form-control" col="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Bill To</label>
+                        <textarea class="form-control" col="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>PIC Contact Name</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>PIC Contact Number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>PIC Contact Address</label>
+                        <textarea class="form-control" col="3"></textarea>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -972,9 +988,11 @@
                           <tr>
                             <th style="width: 10px">#</th>
                             <th>Item Code</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
+                            <th>Description</th>
+                            <th>QTY</th>
+                            <th>UOM</th>
+                            <th>Unit Price</th>
+                            <th>Total Price</th>
                             <th style="width: 40px"></th>
                           </tr>
                         </thead>
@@ -983,6 +1001,11 @@
                             <td>1.</td>
                             <td><input type="text" class="form-control"></td>
                             <td><input type="text" class="form-control"></td>
+                            <td><input type="number" class="form-control"></td>
+                            <td><select>
+                              <option>PCS</option>
+                              <option>Meter</option>
+                            </select></td>
                             <td><input type="text" class="form-control"></td>
                             <td><input type="text" class="form-control"></td>
                             <td><a href="#" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></a></td>
@@ -1000,8 +1023,33 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
+                        <label>Discount</label>
+                        <input type="text" class="form-control" Placeholder="%">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
                         <label>Total</label>
                         <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr />
+                  <h6 class="mb-3">CURRENCY</h6>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Purchase Currency</label>
+                        <select class="form-control">
+                          <option>IDR</option>
+                          <option>USD</option>
+                        </select>
                       </div>
                     </div>
                   </div>
@@ -1042,14 +1090,20 @@
                 <div class="row">
                   <h6 class="mb-3">Terms & Conditions</h6>
                   <div class="col-sm-12">
-                    <div class="form-group">
-                      <label>Term Title</label>
-                      <input type="text" class="form-control" style="width:200px;">
-                    </div>
                     <textarea class="form-control" row="3"></textarea>
                   </div>
                 </div>
 
+                <hr />
+                <h6 class="mb-3">COMMISSION</h6>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Sales Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
                 </form>
               </div>
               <!-- /.card-body -->
